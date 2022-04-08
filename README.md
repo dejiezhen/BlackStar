@@ -3,7 +3,7 @@
 
 <b>Cloning via Personal Access Token (recommended)</b>
 ```
-git clone https://<github username>:<TOKEN>@github.com/<github username>/2D_Platformer.git
+git clone https://<github username>:<TOKEN>@github.com/<github username>/BlackStar.git
 ```
   
 <b>Add to staging</b>
