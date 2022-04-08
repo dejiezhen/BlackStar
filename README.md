@@ -1,18 +1,28 @@
 # Black-Star
-Git Commands
-Cloning via Personal Access Token (recommended)
+<h3>Git Commands</h3>
 
+<b>Cloning via Personal Access Token (recommended)</b>
+```
 git clone https://<github username>:<TOKEN>@github.com/<github username>/2D_Platformer.git
-Add to staging
-
+```
+  
+<b>Add to staging</b>
+```
 git add 
-Commit to remote
+```
 
+<b>Commit to remote</b>
+```
 git commit -m "<commit message>"
-Push to remote repo(github)
-
+```
+<b>Push to remote repo(github)</b>
+```
 git push
-File Hierarchy
+```
+
+<h3>File Hierarchy</h3>
+  
+```
 project
 │   README.md    
 │
@@ -46,5 +56,7 @@ project
 |       |    └─Obstacles
 |       |      | ..
 |       |      | ..
+
 │ 
 ........
+```
