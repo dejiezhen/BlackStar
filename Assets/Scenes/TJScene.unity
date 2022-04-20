@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 780051021}
   - component: {fileID: 780051023}
   m_Layer: 0
-  m_Name: AsteroidSpawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,8 +289,10 @@ MonoBehaviour:
   yRange: 50
   spawnTimer: 5
   timer: 0
-  asteroid: {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
-  gameControler: {fileID: 780051023}
+  spawnObjects:
+  - {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
+  - {fileID: 6878541433590688595, guid: dad5aceb9a185f942ad42d85061926c7, type: 3}
+  pointsManager: {fileID: 780051023}
 --- !u!4 &780051022
 Transform:
   m_ObjectHideFlags: 0
