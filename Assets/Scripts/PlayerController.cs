@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
-    public float acceleration = 10;
+    public float acceleration = 80;
 
     private Rigidbody rb;
 
@@ -13,6 +13,9 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.mass = 0;
+        rb.drag = 3.5f;
+        rb.angularDrag = 0;
     }
 
     // Update is called once per frame
