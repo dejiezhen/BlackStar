@@ -42,7 +42,7 @@ public class AsteroidSpawner : MonoBehaviour
     {
 
         Vector3 spawnPoint = new Vector3(gameObject.transform.position.x + Random.Range(0, xRange), gameObject.transform.position.y + Random.Range(0, yRange), gameObject.transform.position.z - 2);
-        Instantiate(spawnObjects[0], spawnPoint, spawnObjects[0].transform.rotation);
+        Instantiate(spawnObjects[Random.Range(0, 1)], spawnPoint, spawnObjects[Random.Range(0, 1)].transform.rotation);
 
     }
 }
