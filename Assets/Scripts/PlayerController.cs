@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     public float particleRange = 100f;
     private Rigidbody rb;
     public Camera crosshair;
+    public bool firingAbled = true;
+    public float firingInterval = 2f;
+    public Transform missileSpawnPoint;
+    public GameObject missilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +39,30 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Shoot();
+            OnSpaceshoot();
         }
     }
 
+    public void FireMissiles()
+    {
+        Instantiate(missilePrefab, missileSpawnPoint.position, Quaternion.identity);
+    }
+
+    public void OnSpaceshoot()
+    {
+        if (firingAbled)
+        {
+            FireMissiles();
+            firingAbled = false;
+            StartCoroutine(FiringDelay());
+        }
+    } 
+
+    private IEnumerator FiringDelay()
+    {
+        yield return new WaitForSeconds(firingInterval);
+        firingAbled = !firingAbled;
+    }
     private void Shoot ()
     {
         RaycastHit hit;
