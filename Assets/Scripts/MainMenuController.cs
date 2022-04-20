@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class MainMenu : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class MainMenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject mainMenu;
+
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    //Starts the first level
+    public void StartGame()
     {
-        
+        SceneManager.LoadScene("MasterScene");
+    }
+
+    //Quits
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
