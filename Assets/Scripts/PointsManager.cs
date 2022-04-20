@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour
+public class PointsManager : MonoBehaviour
 {
     public GameObject player;
 
     public PlayerController playerScript;
+
+    //uimanager
 
     public float timePlayed;
     public float pointTimer;
@@ -15,10 +17,6 @@ public class GameController : MonoBehaviour
 
 
     public int points;
-
-    private void GameOver()
-    {
-    }
 
     private void Start()
     {

@@ -10,9 +10,9 @@ public class AsteroidSpawner : MonoBehaviour
     public float spawnTimer;
     public float timer;
 
-    public GameObject asteroid;
+    public GameObject[] spawnObjects;
 
-    public GameController gameControler;
+    public PointsManager pointsManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +31,9 @@ public class AsteroidSpawner : MonoBehaviour
             timer = spawnTimer;
         }
 
-        if (gameControler.timePlayed > 10)
+        if (pointsManager.timePlayed > 10)
         {
-            spawnTimer = 5 - (Mathf.Floor(gameControler.timePlayed / 10) * .1f);
+            spawnTimer = 5 - (Mathf.Floor(pointsManager.timePlayed / 10) * .1f);
         }
 
     }
@@ -42,7 +42,10 @@ public class AsteroidSpawner : MonoBehaviour
     {
 
         Vector3 spawnPoint = new Vector3(gameObject.transform.position.x + Random.Range(0, xRange), gameObject.transform.position.y + Random.Range(0, yRange), gameObject.transform.position.z - 2);
-        Instantiate(asteroid, spawnPoint, asteroid.transform.rotation);
+
+        GameObject randObj = spawnObjects[Random.Range(0, 2)];
+
+        Instantiate(randObj, spawnPoint, randObj.transform.rotation);
 
     }
 }
