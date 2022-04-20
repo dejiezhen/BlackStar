@@ -180,11 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
---- !u!1 &550074116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
-  m_PrefabInstance: {fileID: 2578243822564100819}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &650724163
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +289,7 @@ MonoBehaviour:
   yRange: 50
   spawnTimer: 5
   timer: 0
-  asteroid: {fileID: 550074116}
+  asteroid: {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
   gameControler: {fileID: 780051023}
 --- !u!4 &780051022
 Transform:
