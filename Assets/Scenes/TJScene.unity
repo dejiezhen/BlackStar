@@ -437,11 +437,11 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -928695507
-  m_SortingLayer: -1
+  m_SortingLayerID: 2043577565
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_RenderMode: 1
-  m_SortMode: 0
+  m_SortMode: 3
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
@@ -538,7 +538,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -5179,8 +5179,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091230013}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.5, y: 8.279999, z: -5.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.5, y: 8.279999, z: 211.3}
+  m_LocalScale: {x: 5.8836, y: 5.8836, z: 5.8836}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -5262,7 +5262,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -928695507
+  m_SortingLayerID: 2043577565
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1207936893
