@@ -12,6 +12,8 @@ public class AsteroidSpawner : MonoBehaviour
 
     public GameObject asteroid;
 
+    public GameController gameControler;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +31,9 @@ public class AsteroidSpawner : MonoBehaviour
             timer = spawnTimer;
         }
 
-        if (GameControler.Instance.timePlayed > 10)
+        if (gameControler.timePlayed > 10)
         {
-            spawnTimer = 4 - (Mathf.Floor(GameControler.Instance.timePlayed / 10) * .1f);
+            spawnTimer = 5 - (Mathf.Floor(gameControler.timePlayed / 10) * .1f);
         }
 
     }

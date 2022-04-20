@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameControler : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    public static GameControler Instance { get; private set; }
-
     public GameObject player;
 
     public PlayerController playerScript;
@@ -19,14 +17,6 @@ public class GameControler : MonoBehaviour
     {
     }
 
-
-    private void Start()
-    {
-
-        player = GameObject.FindWithTag("Player");
-        playerScript = player.GetComponent<PlayerController>();
-    }
-
     public void AddPoint()
     {
         points += 1;
@@ -34,6 +24,7 @@ public class GameControler : MonoBehaviour
 
     private void Update()
     {
+        timePlayed += Time.deltaTime;
         //points += Time.deltaTime;
 
 /*        if (playerScript.lives <= 0)
