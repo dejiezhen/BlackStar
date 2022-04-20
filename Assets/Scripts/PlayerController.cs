@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -71,5 +72,39 @@ public class PlayerController : MonoBehaviour
             Debug.Log("object hit");
         }
        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+       
+       if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            if (UIManager.lives < 0)
+            {
+                SceneManager.LoadScene("End");
+                
+            }
+            else
+            {
+                UIManager.lives--;
+                UIManager.UpdateLives(UIManager.lives);
+
+            }
+
+        }
+
+        if (collision.gameObject.CompareTag("Food"))
+        {
+            if (UIManager.lives < 3)
+            {
+                UIManager.lives++;
+                UIManager.UpdateLives(UIManager.lives);
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Upgrade"))
+        {
+
+        }
     }
 }
