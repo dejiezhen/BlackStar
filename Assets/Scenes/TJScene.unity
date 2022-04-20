@@ -290,8 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb3d69e812ce434b99aacc18eee8214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRange: 250
-  yRange: 140
+  xRange: 75
+  yRange: 50
   spawnTimer: 5
   timer: 0
   asteroid: {fileID: 550074116}
@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780051020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -126.94, y: -63.69, z: 267.48}
+  m_LocalPosition: {x: -38.8, y: -14.9, z: 267.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -326,63 +326,6 @@ MonoBehaviour:
   playerScript: {fileID: 2022646329}
   timePlayed: 0
   points: 0
---- !u!1001 &1036776856
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 175418, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Purple 7 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 43.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 146.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473962, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d259368b696e9a54f8b899cf86be4dca, type: 3}
 --- !u!1 &1091230013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,10 +5542,6 @@ PrefabInstance:
     - target: {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
       propertyPath: m_Name
       value: Asteroid Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 5141726365380645681, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
