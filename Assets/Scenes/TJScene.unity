@@ -325,6 +325,8 @@ MonoBehaviour:
   player: {fileID: 2022646326}
   playerScript: {fileID: 2022646329}
   timePlayed: 0
+  pointTimer: 10
+  timer: 0
   points: 0
 --- !u!1 &1091230013
 GameObject:

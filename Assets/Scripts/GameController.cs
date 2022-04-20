@@ -10,6 +10,9 @@ public class GameController : MonoBehaviour
     public PlayerController playerScript;
 
     public float timePlayed;
+    public float pointTimer;
+    public float timer;
+
 
     public int points;
 
@@ -17,21 +20,32 @@ public class GameController : MonoBehaviour
     {
     }
 
-    public void AddPoint()
+    private void Start()
     {
-        points += 1;
+        timer = pointTimer;
     }
 
     private void Update()
     {
         timePlayed += Time.deltaTime;
+
+        timer -= Time.deltaTime;
+        if (timer < 0)
+        {
+            points += 10;
+
+            timer = pointTimer;
+        }
+
+
         //points += Time.deltaTime;
 
-/*        if (playerScript.lives <= 0)
-        {
-            GameOver();
-        }
-*/    }
+        /*        if (playerScript.lives <= 0)
+                {
+                    GameOver();
+                }
+        */
+    }
 
 
 
