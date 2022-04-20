@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour
 {
-
+    public float xRange;
+    public float yRange;
 
     public float spawnTimer;
     public float timer;
 
+    public GameObject asteroid;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = spawnTimer;
     }
 
     // Update is called once per frame
@@ -35,6 +38,9 @@ public class AsteroidSpawner : MonoBehaviour
 
     void SpawnAsteroid()
     {
+
+        Vector3 spawnPoint = new Vector3(gameObject.transform.position.x + Random.Range(0, xRange), gameObject.transform.position.y + Random.Range(0, yRange), gameObject.transform.position.z);
+        Instantiate(asteroid, spawnPoint, asteroid.transform.rotation);
 
     }
 }
