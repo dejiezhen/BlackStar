@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3853956154053517663}
-  m_LocalRotation: {x: -0.18866782, y: -0, z: -0, w: 0.98204094}
+  m_LocalRotation: {x: -0.18866688, y: 0, z: 0, w: 0.9820412}
   m_LocalPosition: {x: 1.4522943, y: -9, z: 56.4}
   m_LocalScale: {x: 0.47366, y: 0.47366, z: 0.47366}
   m_Children: []
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc71b9efc8bb4f989d7443738cec8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 10
+  acceleration: 80
 --- !u!64 &8262754198227672162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -108,7 +108,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8140238591767863974, guid: 2431b45c981a54345a8661e0b50c5e4e, type: 3}
 --- !u!54 &8375376582228644126
@@ -121,9 +121,9 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
