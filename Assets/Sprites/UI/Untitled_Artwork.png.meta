@@ -4,13 +4,43 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1302723820812287101
-    second: hearts_3
+    second: Untitled_Artwork_0
   - first:
       213: 6146782616825927046
-    second: hearts2
+    second: Untitled_Artwork_1
   - first:
       213: -5733780330723738835
-    second: hearts1
+    second: Untitled_Artwork_2
+  - first:
+      213: 3766885766661273901
+    second: Untitled_Artwork_3
+  - first:
+      213: 6561064905138155286
+    second: Untitled_Artwork_4
+  - first:
+      213: -5488554388451229797
+    second: Untitled_Artwork_5
+  - first:
+      213: -8241698570571209601
+    second: Untitled_Artwork_6
+  - first:
+      213: 1102856127206871855
+    second: Untitled_Artwork_7
+  - first:
+      213: 6549936278352523220
+    second: Untitled_Artwork_8
+  - first:
+      213: 8798256279340324985
+    second: Untitled_Artwork_9
+  - first:
+      213: -7830560839520315380
+    second: Untitled_Artwork_10
+  - first:
+      213: -6977119822239602494
+    second: Untitled_Artwork_11
+  - first:
+      213: 679723862035372351
+    second: Untitled_Artwork_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,16 +142,16 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hearts_3
+      name: Untitled_Artwork_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1354
+        y: 1413
         width: 2048
-        height: 621
+        height: 528
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 59, z: 0, w: 40}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -133,13 +163,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hearts2
+      name: Untitled_Artwork_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 707
+        y: 677
         width: 2048
-        height: 506
+        height: 528
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,16 +184,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hearts1
+      name: Untitled_Artwork_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 2048
-        height: 543
+        height: 528
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 23}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0

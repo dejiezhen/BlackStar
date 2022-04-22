@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb3d69e812ce434b99aacc18eee8214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRange: 50
-  yRange: 40
+  xRange: 35
+  yRange: 35
   spawnTimer: 3
   timer: 0
   spawnObjects:
