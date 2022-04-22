@@ -5,12 +5,15 @@ using UnityEngine;
 public class MissileController : MonoBehaviour
 {
     public float moveSpeed = 400f;
+    public float lifeTime = 8;
     private Rigidbody rb;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Destroy(gameObject, lifeTime);
     }
 
     // Update is called once per frame

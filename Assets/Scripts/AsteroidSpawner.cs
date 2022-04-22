@@ -43,7 +43,7 @@ public class AsteroidSpawner : MonoBehaviour
 
         Vector3 spawnPoint = new Vector3(gameObject.transform.position.x + Random.Range(0, xRange), gameObject.transform.position.y + Random.Range(0, yRange), gameObject.transform.position.z - 2);
 
-        GameObject randObj = spawnObjects[Random.Range(0, 2)];
+        GameObject randObj = spawnObjects[Random.Range(0, spawnObjects.Length)];
 
         Instantiate(randObj, spawnPoint, randObj.transform.rotation);
 
