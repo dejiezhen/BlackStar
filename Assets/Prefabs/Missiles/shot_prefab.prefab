@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 735967907392168899}
   - component: {fileID: 10825254}
   - component: {fileID: -8279855055687702616}
+  - component: {fileID: 5303908912155026889}
   m_Layer: 0
   m_Name: shot_prefab
   m_TagString: Untagged
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4000
+  lifeTime: 8
 --- !u!108 &10825254
 Light:
   m_ObjectHideFlags: 0
@@ -195,3 +197,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 6
   m_CollisionDetection: 0
+--- !u!65 &5303908912155026889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.2, y: 13.2, z: 63.199997}
+  m_Center: {x: 0, y: 0, z: 24.999998}

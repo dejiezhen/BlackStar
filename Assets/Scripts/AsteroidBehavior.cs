@@ -27,4 +27,8 @@ public class AsteroidBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+
+
 }

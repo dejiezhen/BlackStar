@@ -21,4 +21,14 @@ public class MissileController : MonoBehaviour
     {
         rb.velocity = new Vector3(0f, 0f, moveSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Asteroid")
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
+
 }
