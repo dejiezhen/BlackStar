@@ -49,6 +49,7 @@ public class UIManager : MonoBehaviour
     //Changes the lives
     private void LivesChange(int lives)
     {
+        Debug.Log("deathhhhh");
         if (lives <= 0)
         {
             Lose();

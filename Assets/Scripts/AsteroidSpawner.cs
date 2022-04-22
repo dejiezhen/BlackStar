@@ -7,6 +7,7 @@ public class AsteroidSpawner : MonoBehaviour
     public float xRange;
     public float yRange;
 
+    private float storedTimer;
     public float spawnTimer;
     public float timer;
 
@@ -18,6 +19,7 @@ public class AsteroidSpawner : MonoBehaviour
     void Start()
     {
         timer = spawnTimer;
+        storedTimer = spawnTimer;
     }
 
     // Update is called once per frame
@@ -33,7 +35,7 @@ public class AsteroidSpawner : MonoBehaviour
 
         if (pointsManager.timePlayed > 10)
         {
-            spawnTimer = 5 - (Mathf.Floor(pointsManager.timePlayed / 10) * .1f);
+            spawnTimer = storedTimer - (Mathf.Floor(pointsManager.timePlayed / 10) * .1f);
         }
 
     }

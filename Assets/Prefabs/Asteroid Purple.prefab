@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3633322516929923349}
   m_Layer: 0
   m_Name: Asteroid Purple
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbac2037ebde4d45815619556a12f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -20
+  moveSpeed: -40
 --- !u!135 &3633322516929923349
 SphereCollider:
   m_ObjectHideFlags: 0

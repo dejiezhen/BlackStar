@@ -74,6 +74,39 @@ public class PlayerController : MonoBehaviour
        
     }
 
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("Asteroid"))
+        {
+            if (UIManager.lives < 0)
+            {
+                SceneManager.LoadScene("End");
+
+            }
+            else
+            {
+                UIManager.lives--;
+                UIManager.UpdateLives(UIManager.lives);
+
+            }
+
+        }
+
+        if (col.gameObject.CompareTag("Food"))
+        {
+            if (UIManager.lives < 3)
+            {
+                UIManager.lives++;
+                UIManager.UpdateLives(UIManager.lives);
+            }
+        }
+
+        if (col.gameObject.CompareTag("Upgrade"))
+        {
+
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
        
