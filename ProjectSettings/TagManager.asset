@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Asteroid
   - Shot
+  - Food
   layers:
   - Default
   - TransparentFX
