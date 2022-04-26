@@ -27,6 +27,7 @@ public class MissileController : MonoBehaviour
         if (col.gameObject.tag == "Asteroid")
         {
             Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 
