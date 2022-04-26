@@ -46,11 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 35
   yRange: 35
-  spawnTimer: 3
+  spawnTimer: 2
   timer: 0
   spawnObjects:
   - {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
   - {fileID: 6878541433590688595, guid: dad5aceb9a185f942ad42d85061926c7, type: 3}
+  - {fileID: 7950568905491973320, guid: 7540d9d352e03d04aaeabdabf8f9b092, type: 3}
   pointsManager: {fileID: 2885583901196511792}
 --- !u!114 &2885583901196511792
 MonoBehaviour:

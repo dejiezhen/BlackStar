@@ -1370,18 +1370,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2885583901196511794, guid: 280480438b533b94f9965dbad67c6ded, type: 3}
-      propertyPath: spawnTimer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2885583901196511794, guid: 280480438b533b94f9965dbad67c6ded, type: 3}
-      propertyPath: spawnObjects.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2885583901196511794, guid: 280480438b533b94f9965dbad67c6ded, type: 3}
-      propertyPath: spawnObjects.Array.data[2]
-      value: 
-      objectReference: {fileID: 7950568905491973320, guid: 7540d9d352e03d04aaeabdabf8f9b092, type: 3}
     - target: {fileID: 2885583901196511795, guid: 280480438b533b94f9965dbad67c6ded, type: 3}
       propertyPath: m_Name
       value: Spawner
