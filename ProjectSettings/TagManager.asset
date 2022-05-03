@@ -9,6 +9,7 @@ TagManager:
   - UFO
   - Upgrade
   - Food
+  - Score
   layers:
   - Default
   - TransparentFX
