@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
                 UIManager.lives++;
                 UIManager.UpdateLives(UIManager.lives);
             }
+            Destroy(col.gameObject);
         }
 
         if (col.gameObject.CompareTag("Upgrade"))
