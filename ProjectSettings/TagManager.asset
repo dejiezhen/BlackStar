@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Asteroid
+  - Missile
+  - UFO
+  - Upgrade
+  - Food
   layers:
   - Default
   - TransparentFX

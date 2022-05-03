@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public Transform missileSpawnPoint;
     public GameObject missilePrefab;
 
+    private bool invincible = false;
+    public float invincibleTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (invincible && invincibleTimer <= 0)
+        {
+            invincible = false;
+        }
+        else
+        {
+            invincibleTimer= invincibleTimer-Time.deltaTime;
+        }
+        
         float moveLeftRight = Input.GetAxis("Horizontal");
         float moveForwardBack = Input.GetAxis("Vertical");
 
@@ -77,19 +88,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Asteroid"))
+        if ((col.gameObject.CompareTag("Asteroid") || col.gameObject.CompareTag("Missile") || col.gameObject.CompareTag("UFO")) && !invincible)
         {
-            if (UIManager.lives < 0)
-            {
-                SceneManager.LoadScene("End");
 
-            }
-            else
-            {
-                UIManager.lives--;
-                UIManager.UpdateLives(UIManager.lives);
-
-            }
+            UIManager.lives--;
+            UIManager.UpdateLives(UIManager.lives);
+            Destroy(col.gameObject);
 
         }
 
@@ -100,44 +104,14 @@ public class PlayerController : MonoBehaviour
                 UIManager.lives++;
                 UIManager.UpdateLives(UIManager.lives);
             }
+            Destroy(col.gameObject);
         }
 
         if (col.gameObject.CompareTag("Upgrade"))
         {
-
+            invincible = true;
+            invincibleTimer = 7;
         }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-       
-       if (collision.gameObject.CompareTag("Asteroid"))
-        {
-            if (UIManager.lives < 0)
-            {
-                SceneManager.LoadScene("End");
-                
-            }
-            else
-            {
-                UIManager.lives--;
-                UIManager.UpdateLives(UIManager.lives);
-
-            }
-
-        }
-
-        if (collision.gameObject.CompareTag("Food"))
-        {
-            if (UIManager.lives < 3)
-            {
-                UIManager.lives++;
-                UIManager.UpdateLives(UIManager.lives);
-            }
-        }
-
-        if (collision.gameObject.CompareTag("Upgrade"))
-        {
-
-        }
-    }
+    
 }
