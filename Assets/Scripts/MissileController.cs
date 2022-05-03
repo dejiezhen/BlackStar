@@ -24,7 +24,7 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Asteroid")
+        if ((col.gameObject.tag == "Asteroid")|| (col.gameObject.tag == "UFO"))
         {
             Destroy(col.gameObject);
         }
