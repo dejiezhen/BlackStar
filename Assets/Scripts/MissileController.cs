@@ -7,6 +7,10 @@ public class MissileController : MonoBehaviour
     public float moveSpeed = 400f;
     public float lifeTime = 8;
     private Rigidbody rb;
+    public float addObstaclePoint;
+    public GameObject gameManagerObject;
+    private GameManager gameManager;
+
 
 
     // Start is called before the first frame update
@@ -14,6 +18,9 @@ public class MissileController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, lifeTime);
+        //gameManager = gameManagerObject.GetComponent<GameManager>();
+        gameManagerObject = GameObject.Find("SceneGameManager");
+        gameManager = gameManagerObject.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -24,10 +31,15 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if ((col.gameObject.tag == "Asteroid")|| (col.gameObject.tag == "UFO"))
+        if (col.gameObject.tag == "Asteroid")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            addObstaclePoint = col.gameObject.tag == "Asteroid"
+                ? 100
+                : 200;
+            Debug.Log("Added additional points " + addObstaclePoint);
+            gameManager.addPoints(addObstaclePoint);
         }
     }
 

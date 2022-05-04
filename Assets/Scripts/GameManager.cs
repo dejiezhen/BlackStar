@@ -18,10 +18,14 @@ public class GameManager : MonoBehaviour
         player = playerObject.GetComponent<PlayerController>();
     }
     // Update is called once per frame
+    public void addPoints(float points)
+    {
+        overallScore += points;
+    }
     void Update()
     {
         playerAcceleration = player.acceleration;
-        overallScore += Time.deltaTime * (playerAcceleration % 1000);
-        score.GetComponent<UnityEngine.UI.Text>().text = overallScore.ToString();
+        overallScore += (Time.deltaTime/2) * (playerAcceleration % 1000);
+        score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
     }
 }
