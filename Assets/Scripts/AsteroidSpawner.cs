@@ -11,6 +11,7 @@ public class AsteroidSpawner : MonoBehaviour
     public float spawnTimer;
     public float timer;
 
+
     public GameObject[] spawnObjects;
 
     public PointsManager pointsManager;
@@ -25,9 +26,11 @@ public class AsteroidSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         timer -= Time.deltaTime;
         if (timer < 0)
         {
+
             SpawnAsteroid();
 
             timer = spawnTimer;
