@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    public float invincibleTimer;
+    public float invincInterval = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,14 +31,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (invincible && invincibleTimer <= 0)
-        {
-            invincible = false;
-        }
-        else
-        {
-            invincibleTimer= invincibleTimer-Time.deltaTime;
-        }
+        //if (invincible && invincibleTimer <= 0)
+        //{
+        //    invincible = false;
+        //}
+        //else
+        //{
+        //    invincibleTimer= invincibleTimer-Time.deltaTime;
+        //}
         
         float moveLeftRight = Input.GetAxis("Horizontal");
         float moveForwardBack = Input.GetAxis("Vertical");
@@ -70,6 +70,11 @@ public class PlayerController : MonoBehaviour
         }
     } 
 
+    private IEnumerator InvincibilityDelay()
+    {
+        yield return new WaitForSeconds(invincInterval);
+        invincible = !invincible;
+    }
     private IEnumerator FiringDelay()
     {
         yield return new WaitForSeconds(firingInterval);
@@ -88,13 +93,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if ((col.gameObject.CompareTag("Asteroid") || col.gameObject.CompareTag("Missile") || col.gameObject.CompareTag("UFO")) && !invincible)
+        if ((col.gameObject.CompareTag("Asteroid")
+               || col.gameObject.CompareTag("Missile")
+               || col.gameObject.CompareTag("UFO"))
+               && !invincible)
         {
-
             UIManager.lives--;
             UIManager.UpdateLives(UIManager.lives);
             Destroy(col.gameObject);
-
+            invincible = true;
+            StartCoroutine(InvincibilityDelay());
         }
 
         if (col.gameObject.CompareTag("Food"))
