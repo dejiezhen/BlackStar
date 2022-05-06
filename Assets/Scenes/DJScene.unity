@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &5502604 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4483280787461520357, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-  m_PrefabInstance: {fileID: 923750433}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &84608841
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,11 +393,6 @@ RectTransform:
   m_AnchoredPosition: {x: 265, y: 167}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &243430581 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1071052562, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-  m_PrefabInstance: {fileID: 923750433}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &352366681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,25 +1047,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1327498497391221504, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-      propertyPath: missileSpawnLeft
-      value: 
-      objectReference: {fileID: 2098661176}
-    - target: {fileID: 1327498497391221504, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-      propertyPath: missileSpawnRight
-      value: 
-      objectReference: {fileID: 1695085446}
-    - target: {fileID: 1327498497391221504, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-      propertyPath: missileSpawnMiddle
-      value: 
-      objectReference: {fileID: 243430581}
     - target: {fileID: 3853956154053517663, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
       propertyPath: m_Name
       value: PlaneModel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853956154053517663, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4483280787461520357, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
       propertyPath: m_RootOrder
@@ -1864,36 +1838,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1695085445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1695085446}
-  m_Layer: 6
-  m_Name: MissileSpawn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1695085446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695085445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.22, y: 3.02, z: -0.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5502604}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862884458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,33 +2241,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978257638}
   m_CullTransparentMesh: 1
---- !u!1 &2098661175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2098661176}
-  m_Layer: 6
-  m_Name: MissileSpawn (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2098661176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098661175}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.36, y: 3.02, z: -0.51}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5502604}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
