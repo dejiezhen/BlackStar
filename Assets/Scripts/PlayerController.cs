@@ -13,11 +13,19 @@ public class PlayerController : MonoBehaviour
     public Camera crosshair;
     public bool firingAbled = true;
     public float firingInterval = 2f;
-    public Transform missileSpawnPoint;
+    public Transform missileSpawnMiddle;
+    public Transform missileSpawnLeft;
+    public Transform missileSpawnRight;
+
+
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    public float invincibleTimer;
+    public float invincInterval = 2f;
+
+    private bool planeUpgrade = true;
+    private float planeUpgradeInterval = 5f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,14 +39,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (invincible && invincibleTimer <= 0)
-        {
-            invincible = false;
-        }
-        else
-        {
-            invincibleTimer= invincibleTimer-Time.deltaTime;
-        }
+        //if (invincible && invincibleTimer <= 0)
+        //{
+        //    invincible = false;
+        //}
+        //else
+        //{
+        //    invincibleTimer= invincibleTimer-Time.deltaTime;
+        //}
         
         float moveLeftRight = Input.GetAxis("Horizontal");
         float moveForwardBack = Input.GetAxis("Vertical");
@@ -57,7 +65,12 @@ public class PlayerController : MonoBehaviour
 
     public void FireMissiles()
     {
-        Instantiate(missilePrefab, missileSpawnPoint.position, Quaternion.identity);
+        Instantiate(missilePrefab, missileSpawnMiddle.position, Quaternion.identity);
+        if (planeUpgrade)
+        {
+            Instantiate(missilePrefab, missileSpawnLeft.position, Quaternion.identity);
+            Instantiate(missilePrefab, missileSpawnRight.position, Quaternion.identity);
+        }
     }
 
     public void OnSpaceshoot()
@@ -69,7 +82,16 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(FiringDelay());
         }
     } 
-
+    private IEnumerator PlaneUpgradeDelay()
+    {
+        yield return new WaitForSeconds(planeUpgradeInterval);
+        planeUpgrade = !planeUpgrade;
+    }
+    private IEnumerator InvincibilityDelay()
+    {
+        yield return new WaitForSeconds(invincInterval);
+        invincible = !invincible;
+    }
     private IEnumerator FiringDelay()
     {
         yield return new WaitForSeconds(firingInterval);
@@ -88,13 +110,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if ((col.gameObject.CompareTag("Asteroid") || col.gameObject.CompareTag("Missile") || col.gameObject.CompareTag("UFO")) && !invincible)
+        if ((col.gameObject.CompareTag("Asteroid")
+               || col.gameObject.CompareTag("Missile")
+               || col.gameObject.CompareTag("UFO"))
+               && !invincible)
         {
-
             UIManager.lives--;
             UIManager.UpdateLives(UIManager.lives);
             Destroy(col.gameObject);
-
+            invincible = true;
+            StartCoroutine(InvincibilityDelay());
         }
 
         if (col.gameObject.CompareTag("Food"))
@@ -109,8 +134,8 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.CompareTag("Upgrade"))
         {
-            invincible = true;
-            invincibleTimer = 7;
+            planeUpgrade = true;
+            StartCoroutine(PlaneUpgradeDelay());
         }
     }
     

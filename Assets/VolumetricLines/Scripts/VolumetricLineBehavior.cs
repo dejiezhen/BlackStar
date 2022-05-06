@@ -2,6 +2,8 @@ using UnityEngine;
 
 namespace VolumetricLines
 {
+	// Credits to owner: https://assetstore.unity.com/packages/tools/particles-effects/volumetric-lines-29160
+
 	/// <summary>
 	/// Render a single volumetric line
 	/// 
@@ -18,10 +20,10 @@ namespace VolumetricLines
 	/// 
 	/// Thanks for bugfixes and improvements to Unity Forum User "Mistale"
 	/// http://forum.unity3d.com/members/102350-Mistale
-    /// 
-    /// Shader code optimization and cleanup by Lex Darlog (aka DRL)
-    /// http://forum.unity3d.com/members/lex-drl.67487/
-    /// 
+	/// 
+	/// Shader code optimization and cleanup by Lex Darlog (aka DRL)
+	/// http://forum.unity3d.com/members/lex-drl.67487/
+	/// 
 	/// </summary>
 	[RequireComponent(typeof(MeshFilter))]
 	[RequireComponent(typeof(MeshRenderer))]

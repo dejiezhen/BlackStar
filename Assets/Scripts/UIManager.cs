@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-
+        Debug.Log(lives);
     }
 
     public static void UpdateLives(int currentLives)
@@ -55,8 +55,10 @@ public class UIManager : MonoBehaviour
             Lose();
         }
         else if (_livesSprites.Length > lives - 1)
+        {
+            Debug.Log("triggered");
             _livesImg.sprite = _livesSprites[lives - 1];
-
+        }
     }
 
     private void Lose()

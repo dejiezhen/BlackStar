@@ -18,7 +18,6 @@ public class MissileController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, lifeTime);
-        //gameManager = gameManagerObject.GetComponent<GameManager>();
         gameManagerObject = GameObject.Find("SceneGameManager");
         gameManager = gameManagerObject.GetComponent<GameManager>();
     }
