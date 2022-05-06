@@ -13,11 +13,19 @@ public class PlayerController : MonoBehaviour
     public Camera crosshair;
     public bool firingAbled = true;
     public float firingInterval = 2f;
-    public Transform missileSpawnPoint;
+    public Transform missileSpawnMiddle;
+    public Transform missileSpawnLeft;
+    public Transform missileSpawnRight;
+
+
     public GameObject missilePrefab;
 
     private bool invincible = false;
     public float invincInterval = 2f;
+
+    private bool planeUpgrade = true;
+    private float planeUpgradeInterval = 5f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +65,12 @@ public class PlayerController : MonoBehaviour
 
     public void FireMissiles()
     {
-        Instantiate(missilePrefab, missileSpawnPoint.position, Quaternion.identity);
+        Instantiate(missilePrefab, missileSpawnMiddle.position, Quaternion.identity);
+        if (planeUpgrade)
+        {
+            Instantiate(missilePrefab, missileSpawnLeft.position, Quaternion.identity);
+            Instantiate(missilePrefab, missileSpawnRight.position, Quaternion.identity);
+        }
     }
 
     public void OnSpaceshoot()
@@ -69,7 +82,11 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(FiringDelay());
         }
     } 
-
+    private IEnumerator PlaneUpgradeDelay()
+    {
+        yield return new WaitForSeconds(planeUpgradeInterval);
+        planeUpgrade = !planeUpgrade;
+    }
     private IEnumerator InvincibilityDelay()
     {
         yield return new WaitForSeconds(invincInterval);
@@ -117,8 +134,8 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.CompareTag("Upgrade"))
         {
-            invincible = true;
-            //invincibleTimer = 7;
+            planeUpgrade = true;
+            StartCoroutine(PlaneUpgradeDelay());
         }
     }
     
