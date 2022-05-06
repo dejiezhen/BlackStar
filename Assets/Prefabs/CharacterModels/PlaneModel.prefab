@@ -1,9 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 5a3a2ab (crosshair srfjnekrlfjlqndewjkqd)
 --- !u!1 &344535458
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,41 +191,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &463436201
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 463436202}
-  m_Layer: 6
-  m_Name: MissileSpawn (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &463436202
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463436201}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 2.2, z: -0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4483280787461520357}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> 5a3a2abdc330347a1cf99cae2053b664cd9e8b73
-=======
->>>>>>> parent of 5a3a2ab (crosshair srfjnekrlfjlqndewjkqd)
 --- !u!1 &979363711
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,40 +325,6 @@ Transform:
   m_Father: {fileID: 4483280787461520357}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!1 &1096262637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1096262638}
-  m_Layer: 6
-  m_Name: MissileSpawn (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1096262638
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096262637}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.4, y: 2.3, z: -0.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4483280787461520357}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of 5a3a2ab (crosshair srfjnekrlfjlqndewjkqd)
 --- !u!1 &1391003084
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,11 +453,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
->>>>>>> 5a3a2abdc330347a1cf99cae2053b664cd9e8b73
-=======
->>>>>>> parent of 5a3a2ab (crosshair srfjnekrlfjlqndewjkqd)
 --- !u!1 &1508512067
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1508512068
 Transform:
   m_ObjectHideFlags: 0
@@ -772,7 +694,7 @@ GameObject:
   - component: {fileID: 8375376582228644126}
   m_Layer: 6
   m_Name: PlaneModel
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -792,8 +714,6 @@ Transform:
   - {fileID: 979363714}
   - {fileID: 2529768709150435717}
   - {fileID: 1508512068}
-  - {fileID: 1096262638}
-  - {fileID: 463436202}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -21.75, y: 0, z: 0}
@@ -864,11 +784,9 @@ MonoBehaviour:
   crosshair: {fileID: 0}
   firingAbled: 1
   firingInterval: 0.5
-  missileSpawnMiddle: {fileID: 1071052562}
-  missileSpawnLeft: {fileID: 463436202}
-  missileSpawnRight: {fileID: 1096262638}
+  missileSpawnPoint: {fileID: 1071052562}
   missilePrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
-  invincInterval: 2
+  invincibleTimer: 0
 --- !u!64 &8262754198227672162
 MeshCollider:
   m_ObjectHideFlags: 0
