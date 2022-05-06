@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Upgrade"))
         {
             invincible = true;
-            invincibleTimer = 7;
+            //invincibleTimer = 7;
         }
     }
     
