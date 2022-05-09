@@ -40,7 +40,6 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(lives);
     }
 
     public static void UpdateLives(int currentLives)

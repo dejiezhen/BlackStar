@@ -10,6 +10,9 @@ public class AlienBehavior : MonoBehaviour
     public float shootSpeed = 3;
     public GameObject alienShot;
 
+    private AudioSource source;
+    public AudioClip shoot;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,8 @@ public class AlienBehavior : MonoBehaviour
         Vector3 temp = rb.velocity;
         temp.z = moveSpeed;
         rb.velocity = temp;
+
+        source = GetComponent<AudioSource>();
 
     }
 
@@ -33,6 +38,8 @@ public class AlienBehavior : MonoBehaviour
         if (shootSpeed <= 0)
         {
             FireMissiles();
+            source.clip = shoot;
+            source.Play();
         }
         else
         {

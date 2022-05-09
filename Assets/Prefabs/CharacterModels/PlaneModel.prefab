@@ -440,10 +440,8 @@ MonoBehaviour:
   bite: {fileID: 8300000, guid: 9e77cf094b7a14c6fae68b2c4c95bcf7, type: 3}
   powerup: {fileID: 8300000, guid: 48a0d264b69f641c2abe522d3575eb2c, type: 3}
   shoot: {fileID: 8300000, guid: d02a1bf71a97443fd88bf7df76767819, type: 3}
+  catModel: {fileID: 2904922434803020607}
   missilePrefab: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
-  invincInterval: 2
-  invincAnimationInterval: 0.5
-  gameModel: {fileID: 0}
 --- !u!64 &8262754198227672162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -806,6 +804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0839b3eba4c26ae44ac5e51baad68474, type: 3}
+--- !u!1 &2904922434803020607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0839b3eba4c26ae44ac5e51baad68474, type: 3}
+  m_PrefabInstance: {fileID: 2634942514535206510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2529768709150435717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0839b3eba4c26ae44ac5e51baad68474, type: 3}
