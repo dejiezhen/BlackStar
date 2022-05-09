@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public float overallScore;
     public float playerAcceleration;
     public GameObject playerObject;
-    private PlayerController player;
 
     public PointsManager pointsManager;
 
@@ -22,7 +21,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         score.text = "0";
-        player = playerObject.GetComponent<PlayerController>();
     }
     // Update is called once per frame
     public void AddPoints(float points)
@@ -31,7 +29,6 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        playerAcceleration = player.acceleration;
         overallScore += ( 1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
         score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
     }
