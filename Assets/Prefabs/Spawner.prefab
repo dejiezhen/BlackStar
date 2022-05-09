@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xRange: 35
-  yRange: 35
+  yRange: 32
   spawnTimer: 3
   timer: 0
   spawnObjects:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xRange: 35
-  yRange: 35
+  yRange: 32
   spawnTimer: 4
   timer: 0
   spawnObjects:
