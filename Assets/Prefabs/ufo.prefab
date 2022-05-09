@@ -350,9 +350,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6070478815850328553}
-  - component: {fileID: 919132148972567496}
   - component: {fileID: 7325138836914634072}
   - component: {fileID: 5625296557820465063}
+  - component: {fileID: 6081977561480501898}
   m_Layer: 0
   m_Name: ufo
   m_TagString: UFO
@@ -376,21 +376,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -50.33, y: 0, z: 0}
---- !u!114 &919132148972567496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878541433590688595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356b78e7e1f113c43a9b8dc116aa5750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: -30
-  shootSpeed: -45
-  alienShot: {fileID: 136330, guid: 3d6a704a8db734f84a32c28318a9732d, type: 3}
 --- !u!54 &7325138836914634072
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -420,6 +405,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6081977561480501898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878541433590688595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356b78e7e1f113c43a9b8dc116aa5750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: -30
+  shootSpeed: 3
+  alienShot: {fileID: 136330, guid: 3d6a704a8db734f84a32c28318a9732d, type: 3}
 --- !u!1 &6909246393385756451
 GameObject:
   m_ObjectHideFlags: 0
