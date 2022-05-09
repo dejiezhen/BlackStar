@@ -17,6 +17,12 @@ public class PlayerController : MonoBehaviour
     public Transform missileSpawnLeft;
     public Transform missileSpawnRight;
 
+    private AudioSource source;
+    public AudioClip bite;
+    public AudioClip powerup;
+    public AudioClip shoot;
+
+
 
     public GameObject missilePrefab;
 
@@ -34,19 +40,12 @@ public class PlayerController : MonoBehaviour
         rb.mass = 0;
         rb.drag = 3.5f;
         rb.angularDrag = 0;
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (invincible && invincibleTimer <= 0)
-        //{
-        //    invincible = false;
-        //}
-        //else
-        //{
-        //    invincibleTimer= invincibleTimer-Time.deltaTime;
-        //}
         
         float moveLeftRight = Input.GetAxis("Horizontal");
         float moveForwardBack = Input.GetAxis("Vertical");
@@ -59,6 +58,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            source.clip = shoot;
+            source.Play();
             OnSpaceshoot();
         }
     }
@@ -128,10 +129,15 @@ public class PlayerController : MonoBehaviour
                 UIManager.lives++;
                 UIManager.UpdateLives(UIManager.lives);
             }
+            source.clip = bite;
+            source.Play();
+            
         }
 
         if (col.gameObject.CompareTag("Upgrade"))
         {
+            source.clip = powerup;
+            source.Play();
             planeUpgrade = true;
             StartCoroutine(PlaneUpgradeDelay());
         }
