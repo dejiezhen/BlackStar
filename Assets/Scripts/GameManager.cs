@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         overallScore += ( 1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
-        score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
+        if (score)
+        {
+            score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
+        }
     }
 }
