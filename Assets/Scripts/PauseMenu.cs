@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     //Opens the Main Menu
-    public void Menu(int sceneID)
+    public void Menu()
     {
         GamePaused = false;
         SceneManager.LoadScene("MainMenu");
