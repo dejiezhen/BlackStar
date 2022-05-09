@@ -34,17 +34,20 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
-            addObstaclePoint = col.gameObject.tag == "Asteroid"
-                ? 100
-                : 200;
-            Debug.Log("Added additional points " + addObstaclePoint);
-            gameManager.AddPoints(addObstaclePoint);
         }
 
         if (col.gameObject.CompareTag("UFO"))
         {
             Destroy(col.gameObject);
+            Destroy(gameObject);
+
         }
+        addObstaclePoint = col.gameObject.tag == "Asteroid"
+        ? 100
+        : 200;
+        Debug.Log("Added additional points " + addObstaclePoint);
+        gameManager.AddPoints(addObstaclePoint);
+
     }
 
 
