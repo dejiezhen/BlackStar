@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2885583901196511793}
   - component: {fileID: 2885583901196511794}
+  - component: {fileID: 1364734698552392344}
   - component: {fileID: 2885583901196511792}
   m_Layer: 0
   m_Name: Spawner
@@ -46,11 +47,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 35
   yRange: 35
-  spawnTimer: 2
+  spawnTimer: 3
   timer: 0
   spawnObjects:
   - {fileID: 2578243822031879639, guid: 2cad0050a7815d14fad14da00d18eaa5, type: 3}
   - {fileID: 6878541433590688595, guid: dad5aceb9a185f942ad42d85061926c7, type: 3}
+  pointsManager: {fileID: 2885583901196511792}
+--- !u!114 &1364734698552392344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2885583901196511795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb3d69e812ce434b99aacc18eee8214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRange: 35
+  yRange: 35
+  spawnTimer: 4
+  timer: 0
+  spawnObjects:
   - {fileID: 7950568905491973320, guid: 7540d9d352e03d04aaeabdabf8f9b092, type: 3}
   - {fileID: 1332491154885636593, guid: dd2b8cb24542a4bf2961f7513f5f9833, type: 3}
   pointsManager: {fileID: 2885583901196511792}

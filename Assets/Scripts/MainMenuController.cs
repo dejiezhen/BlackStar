@@ -18,6 +18,12 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("MasterScene");
     }
 
+    public void StartTut()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+
     //Quits
     public void ExitGame()
     {

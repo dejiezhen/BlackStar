@@ -372,7 +372,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3853956154053517663}
-  m_Mesh: {fileID: 8140238591767863974, guid: 2431b45c981a54345a8661e0b50c5e4e, type: 3}
+  m_Mesh: {fileID: 638523861631414334, guid: 7caaf0ba83e07254dbdff1638edd18d1, type: 3}
 --- !u!23 &3349830140541911178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc71b9efc8bb4f989d7443738cec8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 80
+  acceleration: 100
   damage: 100
   particleRange: 100
   crosshair: {fileID: 0}
@@ -450,7 +450,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 8140238591767863974, guid: 2431b45c981a54345a8661e0b50c5e4e, type: 3}
+  m_Mesh: {fileID: 638523861631414334, guid: 7caaf0ba83e07254dbdff1638edd18d1, type: 3}
 --- !u!54 &8375376582228644126
 Rigidbody:
   m_ObjectHideFlags: 0
