@@ -5,7 +5,7 @@ using UnityEngine;
 public class MissileController : MonoBehaviour
 {
     public float moveSpeed = 400f;
-    public float lifeTime = 8;
+    public float lifeTime = 5;
     private Rigidbody rb;
     public float addObstaclePoint;
     public GameObject gameManagerObject;
@@ -34,17 +34,20 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
-            addObstaclePoint = col.gameObject.tag == "Asteroid"
-                ? 100
-                : 200;
-            Debug.Log("Added additional points " + addObstaclePoint);
-            gameManager.AddPoints(addObstaclePoint);
         }
 
         if (col.gameObject.CompareTag("UFO"))
         {
             Destroy(col.gameObject);
+            Destroy(gameObject);
+
         }
+        addObstaclePoint = col.gameObject.tag == "Asteroid"
+        ? 100
+        : 200;
+        Debug.Log("Added additional points " + addObstaclePoint);
+        gameManager.AddPoints(addObstaclePoint);
+
     }
 
 
