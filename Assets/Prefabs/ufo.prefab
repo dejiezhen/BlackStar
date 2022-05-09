@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356b78e7e1f113c43a9b8dc116aa5750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -30
+  moveSpeed: -31
   shootSpeed: 3
   alienShot: {fileID: 136330, guid: 3d6a704a8db734f84a32c28318a9732d, type: 3}
 --- !u!1 &6909246393385756451
