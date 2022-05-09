@@ -15,14 +15,9 @@ public class CameraController : MonoBehaviour
 
     public float rotationSpeed = 300;
 
-    private float pitch;
-    private float yaw;
-
     // Start is called before the first frame update
     void Start()
     {
-        pitch = 45;
-        yaw = 0;
     }
 
     // Update is called once per frame
