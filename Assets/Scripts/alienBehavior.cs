@@ -25,7 +25,7 @@ public class AlienBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.position.z < -200)
+        if (gameObject.transform.position.z < -50)
         {
             Destroy(gameObject);
         }
