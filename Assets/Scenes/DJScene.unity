@@ -264,6 +264,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1327498497391221504, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
+      propertyPath: gameModel
+      value: 
+      objectReference: {fileID: 1269982325}
+    - target: {fileID: 3349830140541911178, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3853956154053517663, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
       propertyPath: m_Name
       value: PlaneModel

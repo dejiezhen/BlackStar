@@ -61,8 +61,6 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            source.clip = shoot;
-            source.Play();
             OnSpaceshoot();
         }
     }
@@ -82,6 +80,8 @@ public class PlayerController : MonoBehaviour
         if (firingAbled)
         {
             FireMissiles();
+            source.clip = shoot;
+            source.Play();
             firingAbled = false;
             StartCoroutine(FiringDelay());
         }
