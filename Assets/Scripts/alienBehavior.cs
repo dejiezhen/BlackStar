@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class alienBehavior : MonoBehaviour
+public class AlienBehavior : MonoBehaviour
 {
 
     private Rigidbody rb;
