@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.lootlocker.lootlockersdk": "file:/Users/carolinet/Desktop/Game Development/3D-Game/BlackStar/unity-sdk-main",
+    "com.lootlocker.lootlockersdk": "https://github.com/LootLocker/unity-sdk.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.spriteshape": "5.1.7",
     "com.unity.collab-proxy": "1.15.7",
