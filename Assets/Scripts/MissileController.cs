@@ -5,11 +5,14 @@ using UnityEngine;
 public class MissileController : MonoBehaviour
 {
     public float moveSpeed = 400f;
-    public float lifeTime = 8;
+    private float lifeTime = 3;
     private Rigidbody rb;
     public float addObstaclePoint;
     public GameObject gameManagerObject;
     private GameManager gameManager;
+
+    private AudioSource source;
+    public AudioClip explosion;
 
 
 
@@ -20,6 +23,7 @@ public class MissileController : MonoBehaviour
         Destroy(gameObject, lifeTime);
         gameManagerObject = GameObject.Find("SceneGameManager");
         gameManager = gameManagerObject.GetComponent<GameManager>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,23 +34,24 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
+        source.clip = explosion;
+        source.Play();
         if (col.gameObject.tag == "Asteroid")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            addObstaclePoint = col.gameObject.tag == "Asteroid"
+                ? 100
+                : 200;
+            Debug.Log("Added additional points " + addObstaclePoint);
+            gameManager.addPoints(addObstaclePoint);
         }
 
         if (col.gameObject.CompareTag("UFO"))
         {
             Destroy(col.gameObject);
-            Destroy(gameObject);
-
         }
-        addObstaclePoint = col.gameObject.tag == "Asteroid"
-        ? 100
-        : 200;
-        Debug.Log("Added additional points " + addObstaclePoint);
-        gameManager.AddPoints(addObstaclePoint);
+
 
     }
 
