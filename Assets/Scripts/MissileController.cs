@@ -5,7 +5,7 @@ using UnityEngine;
 public class MissileController : MonoBehaviour
 {
     public float moveSpeed = 400f;
-    public float lifeTime = 8;
+    public float lifeTime = 5;
     private Rigidbody rb;
     public float addObstaclePoint;
     public GameObject gameManagerObject;
