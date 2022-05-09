@@ -23,17 +23,17 @@ public class PlayerController : MonoBehaviour
     public AudioClip shoot;
 
 
+    private MeshRenderer mrPlane;
+    public GameObject catModel;
 
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    public float invincInterval = 1.5f;
-    public float invincAnimationInterval = .5f;
+    private float invincInterval = .5f;
+    private float invincAnimationInterval = .1f;
     private bool planeUpgrade = false;
     private float planeUpgradeInterval = 5f;
     private int animationFlip = 0;
-    [SerializeField]
-    private GameObject gameModel;
 
 
     // Start is called before the first frame update
@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
         rb.drag = 3.5f;
         rb.angularDrag = 0;
         source = GetComponent<AudioSource>();
+        mrPlane = gameObject.GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -92,11 +93,6 @@ public class PlayerController : MonoBehaviour
         planeUpgrade = !planeUpgrade;
     }
 
-    //private void ScaleModel(Vector3 newScale)
-    //{
-    //    gameModel.transform.localScale = newScale;
-    //}
-
     private IEnumerator AnimationDelay()
     {
         yield return new WaitForSeconds(invincAnimationInterval);
@@ -104,16 +100,23 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator InvincibilityDelay()
     {
+        Debug.Log("Starting coroutine");
         invincible = true;
-        MeshRenderer mr = gameObject.GetComponent<MeshRenderer>();
-        for (float i = 0; i < animationFlip; i++)
+        float elapsedTime = 0f;
+        while (elapsedTime < invincInterval)
         {
-            mr.enabled = false;
-            Debug.Log("Starting coroutine!!");
-            StartCoroutine(AnimationDelay());
-            mr.enabled = true;
+            MeshRenderer[] MeshRenderArr = catModel.GetComponentsInChildren<MeshRenderer>();
+            mrPlane.enabled = false;
+            catModel.SetActive(false);
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForSeconds(invincAnimationInterval);
+            mrPlane.enabled = true;
+            catModel.SetActive(true);
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForSeconds(invincAnimationInterval);
+            Debug.Log(elapsedTime);
         }
-        yield return new WaitForSeconds(invincInterval);
+        Debug.Log("Stopping Coroutine");
         invincible = false;
     }
     private IEnumerator FiringDelay()
