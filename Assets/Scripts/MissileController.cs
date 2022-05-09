@@ -11,6 +11,9 @@ public class MissileController : MonoBehaviour
     public GameObject gameManagerObject;
     private GameManager gameManager;
 
+    private AudioSource source;
+    public AudioClip explosion;
+
 
 
     // Start is called before the first frame update
@@ -20,6 +23,7 @@ public class MissileController : MonoBehaviour
         Destroy(gameObject, lifeTime);
         gameManagerObject = GameObject.Find("SceneGameManager");
         gameManager = gameManagerObject.GetComponent<GameManager>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,8 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
+        source.clip = explosion;
+        source.Play();
         if (col.gameObject.tag == "Asteroid")
         {
             Destroy(col.gameObject);
@@ -45,6 +51,8 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
         }
+
+        
     }
 
 
