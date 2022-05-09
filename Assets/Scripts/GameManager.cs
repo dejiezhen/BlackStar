@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     public float overallScore;
     public float playerAcceleration;
     public GameObject playerObject;
-    private PlayerController player;
+
+    public PointsManager pointsManager;
+
 
     private void Awake()
     {
@@ -19,17 +21,15 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         score.text = "0";
-        player = playerObject.GetComponent<PlayerController>();
     }
     // Update is called once per frame
-    public void addPoints(float points)
+    public void AddPoints(float points)
     {
         overallScore += points;
     }
     void Update()
     {
-        playerAcceleration = player.acceleration;
-        overallScore += (Time.deltaTime/2) * (playerAcceleration % 1000);
+        overallScore += ( 1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
         score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
     }
 }

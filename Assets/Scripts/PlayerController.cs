@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    public float invincInterval = 2f;
+    public float invincInterval = 3f;
 
     private bool planeUpgrade = false;
     private float planeUpgradeInterval = 5f;
