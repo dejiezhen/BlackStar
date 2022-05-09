@@ -21,10 +21,13 @@ public class PlayerController : MonoBehaviour
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    public float invincInterval = 3f;
-
+    public float invincInterval = 1.5f;
+    public float invincAnimationInterval = .5f;
     private bool planeUpgrade = false;
     private float planeUpgradeInterval = 5f;
+    private int animationFlip = 0;
+    [SerializeField]
+    private GameObject gameModel;
 
 
     // Start is called before the first frame update
@@ -87,10 +90,30 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(planeUpgradeInterval);
         planeUpgrade = !planeUpgrade;
     }
+
+    //private void ScaleModel(Vector3 newScale)
+    //{
+    //    gameModel.transform.localScale = newScale;
+    //}
+
+    private IEnumerator AnimationDelay()
+    {
+        yield return new WaitForSeconds(invincAnimationInterval);
+    }
+
     private IEnumerator InvincibilityDelay()
     {
+        invincible = true;
+        MeshRenderer mr = gameObject.GetComponent<MeshRenderer>();
+        for (float i = 0; i < animationFlip; i++)
+        {
+            mr.enabled = false;
+            Debug.Log("Starting coroutine!!");
+            StartCoroutine(AnimationDelay());
+            mr.enabled = true;
+        }
         yield return new WaitForSeconds(invincInterval);
-        invincible = !invincible;
+        invincible = false;
     }
     private IEnumerator FiringDelay()
     {
@@ -117,7 +140,6 @@ public class PlayerController : MonoBehaviour
         {
             UIManager.lives--;
             UIManager.UpdateLives(UIManager.lives);
-            invincible = true;
             StartCoroutine(InvincibilityDelay());
         }
 
