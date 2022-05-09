@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Image _livesImg;
     public static int lives = 3;
+    public GameObject gmObject;
+    public GameManager gm;
 
 
 
@@ -63,6 +65,9 @@ public class UIManager : MonoBehaviour
 
     private void Lose()
     {
+        gmObject = GameObject.Find("SceneGameManager");
+        gm = gmObject.GetComponent<GameManager>();
+        Debug.Log(gm.overallScore);
         SceneManager.LoadScene("GameOver");
     }
 }
