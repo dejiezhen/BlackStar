@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 6070478815850328553}
   - component: {fileID: 7325138836914634072}
   - component: {fileID: 5625296557820465063}
-  - component: {fileID: 6081977561480501898}
+  - component: {fileID: 9000502438933533476}
   m_Layer: 0
   m_Name: ufo
   m_TagString: UFO
@@ -405,7 +405,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6081977561480501898
+--- !u!114 &9000502438933533476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,12 +414,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6878541433590688595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356b78e7e1f113c43a9b8dc116aa5750, type: 3}
+  m_Script: {fileID: 11500000, guid: 7361ad2cdb32c4f0bbd192f68d70de92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -31
+  moveSpeed: -20
   shootSpeed: 3
   alienShot: {fileID: 136330, guid: 3d6a704a8db734f84a32c28318a9732d, type: 3}
+  shoot: {fileID: 8300000, guid: c0e862f75375b486db231eca547a1084, type: 3}
 --- !u!1 &6909246393385756451
 GameObject:
   m_ObjectHideFlags: 0
