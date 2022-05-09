@@ -44,6 +44,8 @@ public class MissileController : MonoBehaviour
         if (col.gameObject.CompareTag("UFO"))
         {
             Destroy(col.gameObject);
+            Destroy(gameObject);
+
         }
     }
 

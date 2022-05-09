@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject playerObject;
     private PlayerController player;
 
+    public PointsManager pointsManager;
+
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -29,7 +32,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         playerAcceleration = player.acceleration;
-        overallScore += (Time.deltaTime/2) * (playerAcceleration % 1000);
+        overallScore += ( 1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
         score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
     }
 }
