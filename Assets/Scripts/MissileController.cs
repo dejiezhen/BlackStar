@@ -38,7 +38,7 @@ public class MissileController : MonoBehaviour
                 ? 100
                 : 200;
             Debug.Log("Added additional points " + addObstaclePoint);
-            gameManager.addPoints(addObstaclePoint);
+            gameManager.AddPoints(addObstaclePoint);
         }
 
         if (col.gameObject.CompareTag("UFO"))

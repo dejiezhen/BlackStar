@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         player = playerObject.GetComponent<PlayerController>();
     }
     // Update is called once per frame
-    public void addPoints(float points)
+    public void AddPoints(float points)
     {
         overallScore += points;
     }
