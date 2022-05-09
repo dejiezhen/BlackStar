@@ -20,5 +20,7 @@ public class ParticleSpeedIncrease : MonoBehaviour
     {
         var main = ps.main;
         main.simulationSpeed = 1 + (Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
+        //var curColor = main.startColor;
+        //main.startColor = 
     }
 }
