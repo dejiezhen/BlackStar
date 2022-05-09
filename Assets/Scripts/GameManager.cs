@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public GameObject playerObject;
     private PlayerController player;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     private void Start()
     {
         score.text = "0";
