@@ -24,6 +24,7 @@ public class MissileController : MonoBehaviour
         gameManagerObject = GameObject.Find("SceneGameManager");
         gameManager = gameManagerObject.GetComponent<GameManager>();
         source = GetComponent<AudioSource>();
+        source.clip = explosion;
     }
 
     // Update is called once per frame
@@ -34,12 +35,13 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        source.clip = explosion;
-        source.Play();
+        
+
         if (col.gameObject.tag == "Asteroid")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            //source.Play();
             addObstaclePoint = col.gameObject.tag == "Asteroid"
                 ? 100
                 : 200;
@@ -51,7 +53,9 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            //source.Play();
         }
+        
 
 
     }
