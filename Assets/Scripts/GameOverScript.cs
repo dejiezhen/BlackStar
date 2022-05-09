@@ -21,9 +21,5 @@ public class GameOverScript : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
