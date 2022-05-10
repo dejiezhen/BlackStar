@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip bite;
     public AudioClip powerup;
     public AudioClip shoot;
+    public AudioClip hurt;
 
 
     private MeshRenderer mrPlane;
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameObject missilePrefab;
 
     private bool invincible = false;
-    private float invincInterval = .5f;
+    private float invincInterval = .2f;
     private float invincAnimationInterval = .1f;
     private bool planeUpgrade = false;
     private float planeUpgradeInterval = 5f;
@@ -103,6 +104,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Starting coroutine");
         invincible = true;
         float elapsedTime = 0f;
+        Debug.Log(invincInterval);
         while (elapsedTime < invincInterval)
         {
             MeshRenderer[] MeshRenderArr = catModel.GetComponentsInChildren<MeshRenderer>();
@@ -142,6 +144,8 @@ public class PlayerController : MonoBehaviour
                || col.gameObject.CompareTag("UFO"))
                && !invincible)
         {
+            source.clip = hurt;
+            source.Play();
             UIManager.lives--;
             UIManager.UpdateLives(UIManager.lives);
             StartCoroutine(InvincibilityDelay());

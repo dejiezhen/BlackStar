@@ -41,7 +41,6 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
-            //source.Play();
             addObstaclePoint = col.gameObject.tag == "Asteroid"
                 ? 100
                 : 200;
@@ -53,10 +52,9 @@ public class MissileController : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
-            //source.Play();
         }
-        
 
+        source.Play();
 
     }
 
