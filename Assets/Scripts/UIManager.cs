@@ -13,8 +13,14 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Image _livesImg;
     public static int lives = 3;
+    public GameObject musicManager;
     public GameObject gmObject;
     public GameManager gm;
+    [SerializeField]
+    private AudioClip deathSound;
+    private AudioSource audioSource;
+    private AudioSource backgroundMusic;
+    [SerializeField] RectTransform fader;
 
 
 
@@ -38,8 +44,9 @@ public class UIManager : MonoBehaviour
 
     }
 
-    private void Update()
+    private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
     }
 
     public static void UpdateLives(int currentLives)
@@ -64,9 +71,18 @@ public class UIManager : MonoBehaviour
 
     private void Lose()
     {
-        gmObject = GameObject.Find("SceneGameManager");
-        gm = gmObject.GetComponent<GameManager>();
-        Debug.Log(gm.overallScore);
-        SceneManager.LoadScene("GameOver");
+        musicManager = GameObject.Find("MusicManager");
+        backgroundMusic = musicManager.GetComponent<AudioSource>();
+        backgroundMusic.Stop();
+        audioSource.PlayOneShot(deathSound);
+        fader.gameObject.SetActive(true);
+        LeanTween.scale(fader, Vector3.zero, 0f);
+        LeanTween.scale(fader, new Vector3(1, 1, 1), 2f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
+        {
+            gmObject = GameObject.Find("SceneGameManager");
+            gm = gmObject.GetComponent<GameManager>();
+            Debug.Log(gm.overallScore);
+            SceneManager.LoadScene("GameOver");
+        });
     }
 }

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip powerup;
     public AudioClip shoot;
     public AudioClip hurt;
+    public AudioClip deathSound;
 
 
     private MeshRenderer mrPlane;
@@ -126,16 +127,6 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(firingInterval);
         firingAbled = !firingAbled;
     }
-    private void Shoot ()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(crosshair.transform.position, Vector3.forward, out hit, particleRange))
-        {
-            Debug.Log("object hit");
-        }
-       
-    }
-
 
     private void OnTriggerEnter(Collider col)
     {

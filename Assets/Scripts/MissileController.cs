@@ -54,7 +54,7 @@ public class MissileController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        source.Play();
+        source.PlayOneShot(explosion);
 
     }
 
