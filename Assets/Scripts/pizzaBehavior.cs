@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pizzaBehavior : MonoBehaviour
+public class PizzaBehavior : MonoBehaviour
 {
 
     private Rigidbody rb;
