@@ -23,7 +23,6 @@ public class MissileController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         rb.velocity = new Vector3(0f, 0f, moveSpeed * Time.deltaTime);
@@ -44,8 +43,6 @@ public class MissileController : MonoBehaviour
             Destroy(col.gameObject);
             StartCoroutine(DestroyDelay());
             gameManager.AddPoints(addObstaclePoint);
-            
-
         }
 
     }

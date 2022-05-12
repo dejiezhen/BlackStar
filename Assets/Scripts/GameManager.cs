@@ -18,11 +18,12 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
+
     private void Start()
     {
         score.text = "0";
     }
-    // Update is called once per frame
+
     public void AddPoints(float points)
     {
         overallScore += points;
