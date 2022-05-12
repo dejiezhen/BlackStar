@@ -38,7 +38,7 @@ public class AsteroidSpawner : MonoBehaviour
             timer = spawnTimer;
         }
 
-        if (pointsManager.timePlayed > 10)
+        if ((pointsManager.timePlayed > 10)&&spawnTimer>=1.4)
         {
             spawnTimer = storedTimer - (Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
         }
