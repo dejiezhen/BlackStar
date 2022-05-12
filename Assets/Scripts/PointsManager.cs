@@ -36,13 +36,7 @@ public class PointsManager : MonoBehaviour
         }
 
 
-        //points += Time.deltaTime;
 
-        /*        if (playerScript.lives <= 0)
-                {
-                    GameOver();
-                }
-        */
     }
 
 

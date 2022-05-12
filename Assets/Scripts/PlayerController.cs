@@ -112,10 +112,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator InvincibilityDelay()
     {
-        Debug.Log("Starting coroutine");
         invincible = true;
         float elapsedTime = 0f;
-        Debug.Log(invincInterval);
         while (elapsedTime < invincInterval)
         {
             MeshRenderer[] MeshRenderArr = catModel.GetComponentsInChildren<MeshRenderer>();
@@ -127,9 +125,7 @@ public class PlayerController : MonoBehaviour
             catModel.SetActive(true);
             elapsedTime += Time.deltaTime;
             yield return new WaitForSeconds(invincAnimationInterval);
-            Debug.Log(elapsedTime);
         }
-        Debug.Log("Stopping Coroutine");
         invincible = false;
     }
 
