@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
     public AudioClip shootLaser;
     public AudioClip shootRocket;
     public AudioClip hurt;
-    public AudioClip deathSound;
-
 
     private MeshRenderer mrPlane;
     public GameObject catModel;
