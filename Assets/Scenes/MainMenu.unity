@@ -2534,6 +2534,7 @@ MonoBehaviour:
   loadbarDelay: 1
   loadSceneDelay: 2
   textmesh: {fileID: 367618304}
+  completeSound: {fileID: 8300000, guid: 72dac1fa7c4644948951ecb1a30b8ef9, type: 3}
 --- !u!82 &1621408356
 AudioSource:
   m_ObjectHideFlags: 0
