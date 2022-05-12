@@ -10,6 +10,7 @@ TagManager:
   - Upgrade
   - Food
   - Score
+  - Shoot
   layers:
   - Default
   - TransparentFX
