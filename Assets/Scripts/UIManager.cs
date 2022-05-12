@@ -14,8 +14,8 @@ public class UIManager : MonoBehaviour
     private Image _livesImg;
     public static int lives = 3;
     public GameObject musicManager;
-    public GameObject gmObject;
-    public GameManager gm;
+    private GameObject gmObject;
+    private GameManager gm;
     [SerializeField]
     private AudioClip deathSound;
     private AudioSource audioSource;

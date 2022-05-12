@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 823329541}
   - component: {fileID: 823329540}
   m_Layer: 0
-  m_Name: Music
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,6 +410,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &949424493 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 702441295, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
+  m_PrefabInstance: {fileID: 1879247412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &979363713 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 979363713, guid: b6919b9dda59b406bb7cefcffd6b45d9, type: 3}
@@ -651,9 +656,17 @@ PrefabInstance:
       value: GameUICanvas (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7760202094807873861, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
+      propertyPath: fader
+      value: 
+      objectReference: {fileID: 949424493}
+    - target: {fileID: 7760202094807873861, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 8300000, guid: 4329bc752b8b1493e8e704b90217dc18, type: 3}
+    - target: {fileID: 7760202094807873861, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 823329539}
     - target: {fileID: 7760202094807873862, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
