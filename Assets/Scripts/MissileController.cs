@@ -39,7 +39,6 @@ public class MissileController : MonoBehaviour
             addObstaclePoint = col.gameObject.tag == "Asteroid"
                 ? 100
                 : 200;
-            Debug.Log("Added additional points " + addObstaclePoint);
             Destroy(col.gameObject);
             StartCoroutine(DestroyDelay());
             gameManager.AddPoints(addObstaclePoint);

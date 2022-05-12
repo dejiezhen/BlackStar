@@ -57,14 +57,12 @@ public class UIManager : MonoBehaviour
     //Changes the lives
     private void LivesChange(int lives)
     {
-        Debug.Log("deathhhhh");
         if (lives <= 0)
         {
             Lose();
         }
         else if (_livesSprites.Length > lives - 1)
         {
-            Debug.Log("triggered");
             _livesImg.sprite = _livesSprites[lives - 1];
         }
     }
@@ -81,7 +79,6 @@ public class UIManager : MonoBehaviour
         {
             gmObject = GameObject.Find("SceneGameManager");
             gm = gmObject.GetComponent<GameManager>();
-            Debug.Log(gm.overallScore);
             SceneManager.LoadScene("GameOver");
         });
     }
