@@ -10,9 +10,7 @@ public class MissileController : MonoBehaviour
     public float addObstaclePoint;
     public GameObject gameManagerObject;
     private GameManager gameManager;
-
     private AudioSource source;
-    public AudioClip explosion;
 
 
 
@@ -24,7 +22,7 @@ public class MissileController : MonoBehaviour
         gameManagerObject = GameObject.Find("SceneGameManager");
         gameManager = gameManagerObject.GetComponent<GameManager>();
         source = GetComponent<AudioSource>();
-        source.clip = explosion;
+
     }
 
     // Update is called once per frame
@@ -37,26 +35,19 @@ public class MissileController : MonoBehaviour
     {
         
 
-        if (col.gameObject.tag == "Asteroid")
+        if ((col.gameObject.tag == "Asteroid")||(col.gameObject.tag == "UFO"))
         {
             Destroy(col.gameObject);
+            source.Play();
             Destroy(gameObject);
             addObstaclePoint = col.gameObject.tag == "Asteroid"
                 ? 100
                 : 200;
             Debug.Log("Added additional points " + addObstaclePoint);
             gameManager.AddPoints(addObstaclePoint);
+            
         }
-
-        if (col.gameObject.CompareTag("UFO"))
-        {
-            Destroy(col.gameObject);
-            Destroy(gameObject);
-        }
-
-        source.PlayOneShot(explosion);
 
     }
-
 
 }

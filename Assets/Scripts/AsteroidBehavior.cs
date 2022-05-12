@@ -7,6 +7,7 @@ public class AsteroidBehavior : MonoBehaviour
     private Rigidbody rb;
     public float moveSpeed;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class AsteroidBehavior : MonoBehaviour
         Vector3 temp = rb.velocity;
         temp.z = moveSpeed;
         rb.velocity = temp;
+
     }
 
     // Update is called once per frame
@@ -27,7 +29,6 @@ public class AsteroidBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 
 
 

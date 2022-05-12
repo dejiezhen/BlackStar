@@ -53,4 +53,6 @@ public class AlienBehavior : MonoBehaviour
         Instantiate(alienShot, rb.position, Quaternion.identity);
         shootSpeed = 3;
     }
+
+
 }

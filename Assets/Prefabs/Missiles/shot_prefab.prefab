@@ -16,10 +16,10 @@ GameObject:
   - component: {fileID: 10825254}
   - component: {fileID: -8279855055687702616}
   - component: {fileID: 5303908912155026889}
-  - component: {fileID: -8644540255940415992}
+  - component: {fileID: 2351769208630411060}
   m_Layer: 3
   m_Name: shot_prefab
-  m_TagString: Untagged
+  m_TagString: Shoot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,10 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4000
-  lifeTime: 8
   addObstaclePoint: 0
   gameManagerObject: {fileID: 0}
-  explosion: {fileID: 8300000, guid: e8871740749094dfd8aa737dd3b04663, type: 3}
 --- !u!108 &10825254
 Light:
   m_ObjectHideFlags: 0
@@ -214,7 +212,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.2, y: 13.2, z: 63.199997}
   m_Center: {x: 0, y: 0, z: 24.999998}
---- !u!82 &-8644540255940415992
+--- !u!82 &2351769208630411060
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,7 +222,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e8871740749094dfd8aa737dd3b04663, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
