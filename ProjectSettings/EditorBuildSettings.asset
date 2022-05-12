@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Caroline.unity
-    guid: a1efda3ddcc5941f998fdfcc10decc68
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 905f076ba019e4e9c906dd894322219b
