@@ -16,22 +16,21 @@ public class MainMenuController : MonoBehaviour
     public float loadSceneDelay = 10f;
     public Text textmesh;
 
+    private AudioSource audioSource;
+    public AudioClip completeSound;
 
-    //private void Start()
-    //{
-
-    //    //fader.gameObject.SetActive(true);
-    //    //LeanTween.scale(fader, new Vector3(1, 1, 1), 0);
-    //    //LeanTween.scale(fader, Vector3.zero, 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
-    //    //{
-    //    //fader.gameObject.SetActive(false);
-    //    //});
-    //}
-
-    IEnumerator loadingSceneDelay ()
+    private void Start()
     {
-        yield return new WaitForSeconds(loadSceneDelay);
+
+        //fader.gameObject.SetActive(true);
+        //LeanTween.scale(fader, new Vector3(1, 1, 1), 0);
+        //LeanTween.scale(fader, Vector3.zero, 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
+        //{
+        //fader.gameObject.SetActive(false);
+        //});
+        audioSource = GetComponent<AudioSource>();
     }
+
     public void LoadPlayScene(int sceneId)
     {
         StartCoroutine(LoadSceneAsync(sceneId));
@@ -59,14 +58,13 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadNonPlayScene(string sceneName)
     {
-        //Method to start the game and load the main menu
-        //audioSource.PlayOneShot(completeSound);
-        //fader.gameObject.SetActive(true);
-        //LeanTween.scale(fader, Vector3.zero, 0f);
-        //LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
-        //{
-        SceneManager.LoadScene(sceneName);
-        //});
+        audioSource.PlayOneShot(completeSound);
+        fader.gameObject.SetActive(true);
+        LeanTween.scale(fader, Vector3.zero, 0f);
+        LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+        });
     }
 
 
