@@ -1,0 +1,967 @@
+[33mcommit 824ebd031bc1184302a8036a6f44394c1d255d45[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 13:56:09 2022 +0200
+
+    fix changes
+
+[33mcommit 6e62f6fa58f4d0aafcfea7490db817a0d223597c[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 12:49:39 2022 +0200
+
+    fixed load menu more
+
+[33mcommit f5caae7d4c33dde86614f7e17a602a3f82dd783d[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 12:35:55 2022 +0200
+
+    changes to master scene
+
+[33mcommit fb0780950e8adcccf6dbfd8c8c8c78a4d3145bbf[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 12:28:55 2022 +0200
+
+    new ui and master scene changes
+
+[33mcommit dfa23f9dcd4a8dd30986b937dcd78ec1cf34343d[m
+Merge: 3a75517 640372c
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 12:14:23 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 3a755176dd6faa42fc263f5f9f6478b7aac10f9c[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Thu May 12 12:14:21 2022 +0200
+
+    load scene done
+
+[33mcommit 640372cb426e6b4cbf46ebdc910b3f7359155ece[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Thu May 12 11:22:22 2022 +0200
+
+    explosion sound is apissing em OFF
+
+[33mcommit c1640b3f6cf685ef286b171fafb23d789b09bb69[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed May 11 18:15:26 2022 +0200
+
+    lean tween transition in master
+
+[33mcommit b74370e7cb49a34b291d429c2eed29a70c1abe61[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 10 11:12:16 2022 +0200
+
+    crosshair 😔
+
+[33mcommit 7aee6b50eb265904d387cd22f548e96daf500d1e[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 10 11:01:25 2022 +0200
+
+    dejie invincibiltiy interval
+
+[33mcommit 618b5813ec5bb48bd977d573285dd185714f7b5d[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 10 09:38:00 2022 +0200
+
+    caroline leader=board looking so gooood 😍
+
+[33mcommit 0d4d5b6cb4cd3e701c6e592a7d3a5f8671f6d89d[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 10 09:19:18 2022 +0200
+
+    wait i forgot to give master scene music.
+
+[33mcommit 3d116fbd2ccf3c3297b7603cc59e51c0bf9547ca[m
+Merge: 074e19a 83fdc4b
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 23:41:53 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 074e19a07f38024d29543a5f0242889f3a10dac0[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 23:41:39 2022 +0200
+
+    points points point!!
+
+[33mcommit 83fdc4bd60d772d2acd95e7f121e9c40ac0667c3[m
+Merge: c38bf31 c30e1aa
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 23:39:15 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit c38bf310e502c8405fa49937ac634564a807ac91[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 23:39:09 2022 +0200
+
+    invulnerability done
+
+[33mcommit 0e9928935093109bb6ffbe2ff266ccd3d264745f[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 23:36:45 2022 +0200
+
+    blah blah
+
+[33mcommit c30e1aaff901d93b8d6cac2a9ad1587d5e4252a7[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 23:32:49 2022 +0200
+
+    delete planet
+
+[33mcommit 12ccf52adbb7711463ff3f30cde1d05981173e59[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 23:31:48 2022 +0200
+
+    moving
+
+[33mcommit da22ab66c25dfc1527c27c9a94ec94543b4d6a26[m
+Merge: 3f30219 056a394
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Mon May 9 23:22:34 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 3f30219996d530798b73affa9881fd4ac51db286[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Mon May 9 23:22:26 2022 +0200
+
+    idkahfursgler
+
+[33mcommit 056a394624fe422256068325d1d6a221fef80ce0[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 23:21:32 2022 +0200
+
+    tutgelatobarrier
+
+[33mcommit d001100a42e4e0bdc94c048973b7a5adb9d6a8d4[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 23:16:10 2022 +0200
+
+    tut
+
+[33mcommit 87ecdb2a279df67b7d4929915408ead19c9a4184[m
+Merge: 68b5dc6 62f764b
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 23:15:38 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 62f764bb217e7d92af1cdb630f8ff28386de7d25[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 23:09:28 2022 +0200
+
+    tutorial
+
+[33mcommit fce750e2c63fb2b700cb03d9b0e9d7a0c3831aa5[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:56:11 2022 +0200
+
+    planemissiletutorial
+
+[33mcommit c94f65fbfb7ceb123e6d67ac649f6ae86a3c26db[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:48:52 2022 +0200
+
+    ufo update
+
+[33mcommit b3aa51ad0f547ddfdba94bd09252b637d76e99ea[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:47:12 2022 +0200
+
+    idk
+
+[33mcommit 68b5dc66148682d1734d3a54881f6c84b4fc3fa5[m
+Merge: f35066b adbbb36
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 22:37:26 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit f35066bc20439a9f7c23819c761d09cd65fb138f[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 22:37:21 2022 +0200
+
+    gameover
+
+[33mcommit adbbb368826a4661d90ac3324bc29645de7cef55[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:31:44 2022 +0200
+
+    prefabingg
+
+[33mcommit c814b8901f69239eef713751194e303a45d6f607[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:27:07 2022 +0200
+
+    yeeeet
+
+[33mcommit de898b4bd733243ca951e19eb7a88cc4bfc5d475[m
+Merge: 29178ee 5f0665a
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:25:21 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 29178ee3240931a889f24c3e439e54ae4c68f300[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:25:06 2022 +0200
+
+    aliennnnnnnn
+
+[33mcommit de6cacb4cfada056382e17cc1be551611dd26694[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:19:54 2022 +0200
+
+    alienscriptname
+
+[33mcommit 5f0665af2fbec624a568505ec4bbbc0a268b290a[m
+Merge: 70db7ec ba840b3
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 22:18:10 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 70db7ec7a33546d63b8f5d641088eb8a8e66380d[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 22:18:05 2022 +0200
+
+    change shooting
+
+[33mcommit ba840b3e7904b2698711de5dd563059843c95ee5[m
+Merge: 0b529cb 2e6b224
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:08:58 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 0b529cba00cfbde0b426dc676f0c764f5f0b54ca[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 22:08:48 2022 +0200
+
+    missilestuff and leaderboard key
+
+[33mcommit 2e6b224eac07eb014c37de254817d62f535efdaf[m
+Merge: 7d17849 9aed99d
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:54:34 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 7d17849ff45887b1521b5334c3592be42e51ab4b[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:54:28 2022 +0200
+
+    new invinc
+
+[33mcommit 9aed99da247adb46aaee92b4f2d78ccb02c6c1bf[m
+Merge: a944cbd eb89ed0
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:52:31 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit a944cbdda034c6961e6b443b2e9d91fd85a04c8e[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:51:45 2022 +0200
+
+    misilelife
+
+[33mcommit eb89ed014992b11e3ede034ded6cf84ec4701af3[m
+Merge: 25cd66c 8495399
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 21:44:04 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 25cd66c64595bf44fe4a899c38a81bf59e4cd11a[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 21:43:46 2022 +0200
+
+    yayayay
+
+[33mcommit 84953990186791c4f802409bdce9bffe51403db3[m
+Merge: 140b3f7 bfeb900
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Mon May 9 21:42:37 2022 +0200
+
+    sounds
+
+[33mcommit 60bf439d420b1f1f4506ae8359c0a157388cea47[m
+Merge: 023eaae bfeb900
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 21:40:10 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 140b3f7d69f40f88d1ff5ac9fb25fb7a57b6366c[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Mon May 9 21:39:27 2022 +0200
+
+    sounds!!!!
+
+[33mcommit bfeb9005f822306e98429aea8fc29eebbcd071b0[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:38:27 2022 +0200
+
+    deleted planets
+
+[33mcommit 023eaae589ab4f66755c19b9ef121201542f5628[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 21:32:37 2022 +0200
+
+    leaderboard works!!!!
+
+[33mcommit b2de3999871908de40c254e78d9ccdae5f3bfc05[m
+Merge: dde0f75 ad1ce5e
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:31:36 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit dde0f75ec4ea7441d9bdda40c91289d8bbb9b5c7[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:31:29 2022 +0200
+
+    new changes to main menu
+
+[33mcommit ad1ce5e1bf6bf680a775a3c84e954b4ef6662e53[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:31:03 2022 +0200
+
+    pointbug
+
+[33mcommit 7e7748b0f59e27d09f7efdcf69d8393fb67d0c28[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:27:39 2022 +0200
+
+    scoremaster
+
+[33mcommit abea758e7b528af192b84360465d5d01a22d275a[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:24:17 2022 +0200
+
+    gamemanager remove player stuff
+
+[33mcommit 5a03ee697854d4d08a6c9222affb04f6860925bd[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:21:44 2022 +0200
+
+    stuffs
+
+[33mcommit ef66e3740637b9fa94e73449ada524f6f1e766cd[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Mon May 9 21:19:57 2022 +0200
+
+    leaderboard WORKS!!!!
+
+[33mcommit 9df1e09967fa21d8975cb744c7b8b0a88c758f4a[m
+Merge: b8c5323 284c54a
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:11:58 2022 +0200
+
+    gMerge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit b8c532320dedb0f2272d8f5a644a085f9073138a[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 21:11:54 2022 +0200
+
+    new stuff
+
+[33mcommit 284c54a7ebcf15d43a373680908ee0d5be84641c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 21:03:42 2022 +0200
+
+    simspeedincrease
+
+[33mcommit 2c9303faf443b26d728082ae7385dc19dadc4492[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 20:50:24 2022 +0200
+
+    git ignore change
+
+[33mcommit 00be4c94af818f4d0808817c82772318a0dac022[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Mon May 9 20:49:28 2022 +0200
+
+    new changes from dejie
+
+[33mcommit 18688bcbdaaa11c10441ce39d5054da343fdcace[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 20:36:15 2022 +0200
+
+    spawn adjust
+
+[33mcommit f326c559decdbb0a6bfc7d1e42d2e48cdaccfc73[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 20:24:09 2022 +0200
+
+    spawn range
+
+[33mcommit 2aa35d4b992cd263fb19feed5f5723877b469805[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 20:13:02 2022 +0200
+
+    difficult change
+
+[33mcommit 72b8b02a5ffac47bfcf2d599d3873b210d10475c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Mon May 9 00:09:58 2022 +0200
+
+    spawning faster
+
+[33mcommit 9e8954dd69640d48b836a6a9806096f38662b3d9[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Fri May 6 20:03:13 2022 +0200
+
+    gelato 😍😍😍😍😍😍😍😳
+
+[33mcommit 726a49936499078a402c00fbcc28f4e72e25f06a[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 15:34:54 2022 +0200
+
+    dj scene
+
+[33mcommit 564c05388d50bd85ef75ab4cb847bf74990e1409[m
+Merge: b72db0e 3d7571c
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri May 6 12:53:43 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit b72db0ed08e8c27cb178a58de1f24a502f66420c[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri May 6 12:53:41 2022 +0200
+
+    LEADERBOARD YAYAYAYA
+
+[33mcommit 3d7571cd27ed2f0247d40eb21d9514736a9039f7[m
+Merge: 807e483 ec823e3
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 11:58:27 2022 +0200
+
+    fix plane model changes
+
+[33mcommit 807e4831a32f9885a7082d22128b87fd06118dc2[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 11:46:21 2022 +0200
+
+    merge conflict
+
+[33mcommit ec823e35a14988dd1c0cfb478fbbc3663d3dfe31[m
+Merge: 98ebba5 5a3a2ab
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 11:30:06 2022 +0200
+
+    merge
+
+[33mcommit 98ebba560319514869bd28e75c3d9095ed927454[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 11:29:44 2022 +0200
+
+    plane upgrade changes
+
+[33mcommit 5a3a2abdc330347a1cf99cae2053b664cd9e8b73[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Fri May 6 11:24:18 2022 +0200
+
+    crosshair srfjnekrlfjlqndewjkqd
+
+[33mcommit c3438bc4a4e6389d67b5ba9a8f558942e7af43c0[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 10:40:41 2022 +0200
+
+    change code
+
+[33mcommit 30ce662d52d4cb76cf4de136271768dd6efc42d9[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri May 6 10:39:52 2022 +0200
+
+    invincible
+
+[33mcommit 56dbb3adc68c39d7364a87a12805214bf510e9c3[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed May 4 15:30:22 2022 +0200
+
+    i am so confused
+
+[33mcommit 114061ed633af3b80c4a720c65afbd7da085e14a[m
+Merge: 773de4b 9f7c229
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed May 4 15:25:38 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 773de4b261053906dd92a07851caa4bda52a171c[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed May 4 15:25:35 2022 +0200
+
+    changes to dej scene
+
+[33mcommit 9f7c229f6a6a1cf84e885b0fae3c9701c70fe357[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 16:13:26 2022 +0200
+
+    my attempt at crosshair. still better than bennos solution NGL. its benno solution but better <3
+
+[33mcommit 853e4c0fb9d84ea22a993fa1de9dd8ffe7361805[m
+Merge: f786e7e 3134be3
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Tue May 3 14:06:14 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit f786e7ea72883752d56731709375689b6ce95d33[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Tue May 3 14:06:09 2022 +0200
+
+    points
+
+[33mcommit 3134be325722f14818273fc6cfb36411023ed5be[m
+Merge: 0f1e89f cf6cd0a
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 11:46:04 2022 +0200
+
+    line renderer pls!!
+
+[33mcommit 0f1e89fd6d01bea09feaf38a0b67f8402c3a4589[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 11:31:31 2022 +0200
+
+    the line renderer its pretty ugly
+
+[33mcommit cf6cd0a851831d995f9a0551fa2b7af40f2dec8e[m
+Merge: babd4ee a1cf20e
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Tue May 3 11:05:48 2022 +0200
+
+    merge conflict
+
+[33mcommit babd4ee9117b391454180aa8f1a8e5255f921430[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Tue May 3 11:05:23 2022 +0200
+
+    dejie's work
+
+[33mcommit a1cf20e41fdd7edd7472d0f34fe6c77e2f1c205a[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 10:26:58 2022 +0200
+
+    end scene started
+
+[33mcommit caf563b0dd822c216b24250fc7931348048a6343[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 10:11:30 2022 +0200
+
+    pizza is so perfect it is so good 🤩🤩🤩
+
+[33mcommit fdb33fb70c1e904f562a7d686863f4334ee830f1[m
+Merge: da8ec04 dbe9c39
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 10:05:00 2022 +0200
+
+    juliets scene
+
+[33mcommit da8ec0471512967374ec0919a0dd5bf57e68c317[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue May 3 10:03:57 2022 +0200
+
+    juliets scene looking good
+
+[33mcommit dbe9c39982f5ab9a18324e0286cfdd9fe66106c3[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 11:30:26 2022 +0200
+
+    pioaoioijoizaa
+
+[33mcommit f634f0455ca72936298de1a128beb330a2ff247c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 11:14:49 2022 +0200
+
+    tubbs
+
+[33mcommit 554d711f99770f7ca68db543e664a843c758b643[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 11:09:51 2022 +0200
+
+    pioizaa
+
+[33mcommit a1b1cc7209c88b0bfe0ed08c40e09bca94641e1b[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 11:00:54 2022 +0200
+
+    pizzaaaaaaaaaaaaaa
+
+[33mcommit 8f9dcfce2ac378721b81076b56addffbd56abd3c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 10:45:19 2022 +0200
+
+    bullet collision fix
+
+[33mcommit 0e0a52ecef01d9126c22709b2f39aad70877e50f[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 10:37:16 2022 +0200
+
+    master
+
+[33mcommit bac157ca966e33949baf77029cf3789ff0f0c21a[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Tue Apr 26 10:36:45 2022 +0200
+
+    :camel:
+
+[33mcommit 83427f9adb69ca1c75572f6c1e7f687697482dc5[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 22 11:31:09 2022 +0200
+
+    a
+
+[33mcommit 9e9ba84fe386e74b4d04e554c1e922401bdb6201[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 22 11:20:41 2022 +0200
+
+    more masterrr :+1:
+
+[33mcommit 68eb68e44c87bff2b6c86b8dfc45b4294adb9d09[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 22 11:08:56 2022 +0200
+
+    master changes :tomato:
+
+[33mcommit d51541c2fb3767e05e932070ce50b6e365c84e45[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 22 10:48:50 2022 +0200
+
+    :8ball:
+
+[33mcommit 0255c1e12c3f3a0cdab05726947af9538ed0e3f6[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 22 10:26:09 2022 +0200
+
+    prefabs
+
+[33mcommit 207ab063a2b0e6bba91c52ce21fb19f11f9e424c[m
+Merge: c27484b 1dc443e
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 16:17:26 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit c27484bdc84c4296929d994eff5deb87d09ddae3[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 16:15:59 2022 +0200
+
+    menu is goin crazy
+
+[33mcommit 1dc443ef901155d53fce27059734152fb0d3a639[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 16:09:59 2022 +0200
+
+    aaa :ant:
+
+[33mcommit 43f26f5a256c9dc90d97afca968f973543640a55[m
+Merge: cd147fe ae3e145
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Wed Apr 20 16:07:34 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit cd147fedaa4aa41d6ac769ad4448bd4996a6e828[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Wed Apr 20 16:07:33 2022 +0200
+
+    master scene
+
+[33mcommit ae3e14575bef88c90edfb47174b5ad15430fc3ad[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:55:34 2022 +0200
+
+    planets
+
+[33mcommit aa4c0b2335cb426ea85742fe36f7d90a6221d008[m
+Merge: 3408ac7 352cd7d
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 15:54:44 2022 +0200
+
+    merge
+
+[33mcommit 3408ac7ae248652bcd463287e8de750396a6d07a[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 15:53:55 2022 +0200
+
+    particle system
+
+[33mcommit 352cd7da0a3073db3a896c62da8ec9e36dafda2e[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:49:27 2022 +0200
+
+    no scrips :alien: :
+
+[33mcommit 2d2db22ae75154f28593a515fc49fd27634326bc[m
+Merge: b683206 1555156
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:44:57 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit b68320683ace5a5897b162c0a6dbc86f023aab28[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:42:31 2022 +0200
+
+    spawnufo
+
+[33mcommit 90ec738d98d476afdc574e908d9b9444702cdb4c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:39:45 2022 +0200
+
+    fix
+
+[33mcommit ee0a83a2fb2f2285fcec9978cc95f4182da66370[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:38:45 2022 +0200
+
+    cool colors
+
+[33mcommit 1555156f13b95bad73e3d30c6d5ce77ce58f4b99[m
+Merge: 68ebef1 74fba08
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 15:29:58 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 68ebef1d551e31c0725d12fa0e250017d77e691b[m
+Merge: ce1ac45 68439ba
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 15:28:51 2022 +0200
+
+    UI uh confusion
+
+[33mcommit 74fba081c0fc08d5f291d1e32766ac4d51223fe2[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:28:44 2022 +0200
+
+    a
+
+[33mcommit ce1ac45cdecf37a2aac47877e119eb419cc6c15e[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 15:24:49 2022 +0200
+
+    UI Stuff bOYS
+
+[33mcommit 68439baef05aa26381c542b27529fd42fcf89bae[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:18:36 2022 +0200
+
+    ufo org
+
+[33mcommit 8225852eac0ca4a1097cf9beb060ed905361ad3c[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 15:16:50 2022 +0200
+
+    ufo
+
+[33mcommit 822f93dc80bf87abc563b79853f24457c8063386[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Wed Apr 20 14:49:23 2022 +0200
+
+    tunnel barrier
+
+[33mcommit c1319a311b432ffe1e112c23b04a2074cddb9c3e[m
+Merge: 9bfa72b 74ae2eb
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 14:46:28 2022 +0200
+
+    merge
+
+[33mcommit 9bfa72b54ef44439e98ca381342b29d94ef38bcd[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 14:45:59 2022 +0200
+
+    new changes to dejie's scene
+
+[33mcommit 74ae2eba7ebebc99649863979a2e5c241ecadaf9[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 14:44:04 2022 +0200
+
+    a
+
+[33mcommit 7ce4d96c80e80025749ac4771fdeece20b496028[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 14:39:29 2022 +0200
+
+    j
+
+[33mcommit 09b762d594e43eb39f8572dc986fdd79d6727f63[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 14:34:44 2022 +0200
+
+    a
+
+[33mcommit bd27c3347cab19f38b467b75440afa06a23be0fa[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 14:28:00 2022 +0200
+
+    a
+
+[33mcommit 52721fafd60f701edd0816888ac5a932f9499bc4[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 14:07:48 2022 +0200
+
+    upda
+
+[33mcommit 17af93f5e7bfa4a222b311a0fe2ba37325e3196d[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 13:54:03 2022 +0200
+
+    a
+
+[33mcommit 10e6a36174f8f679c13b928e002ba6815198caef[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 13:53:54 2022 +0200
+
+    scripts
+
+[33mcommit a3b42a71a17ff15012e614b2c50b659054f64f14[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 13:38:01 2022 +0200
+
+    particle layering
+
+[33mcommit 8d533789357a2fb91bc01921f3257f3d58c2184c[m
+Merge: 9b7a11a 81c7c8a
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Wed Apr 20 13:29:46 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 81c7c8ac40f1574b17543948ba8178421491f0fb[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 13:23:11 2022 +0200
+
+    prefab plane with script edits
+
+[33mcommit f2b3ea9556ce7406027e931f82f527c3741e2103[m
+Merge: 8b4c48f 550311b
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 13:15:42 2022 +0200
+
+    merge conflict 2
+
+[33mcommit 8b4c48fed7cc743561a047f48489119121ac31ea[m
+Merge: 8c5ec09 c7fdb46
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Wed Apr 20 13:14:51 2022 +0200
+
+    merge conflict
+
+[33mcommit 550311bcc72633bc426550b9388e6a45754b528a[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Wed Apr 20 13:12:21 2022 +0200
+
+    deleted materials folder
+
+[33mcommit 73ae591e4fa70d183844e873437db56debc79c74[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Tue Apr 19 10:33:09 2022 +0200
+
+    i made a player controller a week ago im pretty sure in Juliet's scene sorry i am not present in class
+
+[33mcommit 8c5ec09fc66c08aa43c13fad95034b09276d3793[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 8 16:34:49 2022 +0200
+
+    background
+
+[33mcommit 9b7a11a3b3a1076148c3f74bdbe6003a6d81819f[m
+Merge: be0e48e c7fdb46
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri Apr 8 16:31:49 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit be0e48e4a21ee50d02d84cf083f355dbb7b3200d[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri Apr 8 16:30:03 2022 +0200
+
+    yuh
+
+[33mcommit c7fdb461edab5f40e310f62215a60a4958f8ac6e[m
+Merge: 2732df9 59d936d
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri Apr 8 16:26:03 2022 +0200
+
+    merge
+
+[33mcommit 2732df97c43f07a94d2262680043f93d5429f527[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri Apr 8 16:25:00 2022 +0200
+
+    new folders, backgrounds, etc
+
+[33mcommit 59d936d2f87bbc0ea960178d652795d60f8cc869[m
+Author: julietdenapoli <julietdenapoli@gmail.com>
+Date:   Fri Apr 8 16:24:36 2022 +0200
+
+    hollow cylinder barrier
+
+[33mcommit 0923236764b191465cf5aa228275c90c5a741fd9[m
+Merge: 340734e 6b8ec45
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri Apr 8 16:17:21 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit 340734e59c24c672e6b60b1232f94bac305c779b[m
+Author: Caroline Taft <71982054+ctaft22@users.noreply.github.com>
+Date:   Fri Apr 8 16:17:19 2022 +0200
+
+    hm
+
+[33mcommit 6b8ec45d9bd7daa935de50a95b0830d1d4be8155[m
+Author: TJ Perez <tjperez090@gmail.com>
+Date:   Fri Apr 8 16:15:52 2022 +0200
+
+    added assets and tjscene
+
+[33mcommit ea7fd7a142a1de894bc5ec12f79bf5941a58c2f3[m
+Merge: ae05ca8 b2ce36d
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri Apr 8 15:13:40 2022 +0200
+
+    Merge branch 'main' of https://github.com/dejiezhen/BlackStar
+
+[33mcommit ae05ca8539f4e6b22ec2a4f26c8333e3d4cc2374[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri Apr 8 15:13:35 2022 +0200
+
+    second commit with new folders
+
+[33mcommit b2ce36d60cac0691b2e61a75ce1c343c45cf7b4e[m
+Author: Haclyon <58933290+dejiezhen@users.noreply.github.com>
+Date:   Fri Apr 8 15:08:50 2022 +0200
+
+    Update README.md
+
+[33mcommit 270c28cf619c29516191127762e7b44819b921da[m
+Author: Dejie <dejie.zhen@gmail.com>
+Date:   Fri Apr 8 15:05:59 2022 +0200
+
+    first commit
+
+[33mcommit fa0b8926797632bc659f12566a7028ad5a03abd3[m
+Author: Haclyon <58933290+dejiezhen@users.noreply.github.com>
+Date:   Fri Apr 8 14:59:13 2022 +0200
+
+    Update README.md
+
+[33mcommit b2ebe56adc321e126b88f27a4966485d8999ab8c[m
+Author: Haclyon <58933290+dejiezhen@users.noreply.github.com>
+Date:   Fri Apr 8 14:57:50 2022 +0200
+
+    Update README.md
+
+[33mcommit a934d272e74f17cc6791c26e42b2056c5fda6528[m
+Author: Haclyon <58933290+dejiezhen@users.noreply.github.com>
+Date:   Fri Apr 8 14:53:29 2022 +0200
+
+    Initial commit

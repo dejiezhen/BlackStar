@@ -422,7 +422,6 @@ MonoBehaviour:
   shootSpeed: 3
   alienShot: {fileID: 136330, guid: 3d6a704a8db734f84a32c28318a9732d, type: 3}
   shoot: {fileID: 8300000, guid: c0e862f75375b486db231eca547a1084, type: 3}
-  explode: {fileID: 8300000, guid: e8871740749094dfd8aa737dd3b04663, type: 3}
 --- !u!82 &4471748708200814833
 AudioSource:
   m_ObjectHideFlags: 0
@@ -433,8 +432,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: e8871740749094dfd8aa737dd3b04663, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

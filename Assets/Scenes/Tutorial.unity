@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330, y: -51}
-  m_SizeDelta: {x: 253.1457, y: 76.305}
+  m_AnchoredPosition: {x: -558.0737, y: -339.58325}
+  m_SizeDelta: {x: 709.293, y: 653.471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244765083
 MonoBehaviour:
@@ -195,11 +195,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: af52ae4c1197041bd96e593212091c3f, type: 3}
-    m_FontSize: 20
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -666,6 +666,14 @@ PrefabInstance:
     - target: {fileID: 7760202094807873880, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760202095590437980, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760202096085924611, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 529.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
