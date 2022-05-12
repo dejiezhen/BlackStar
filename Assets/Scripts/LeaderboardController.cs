@@ -12,6 +12,10 @@ public class LeaderboardController : MonoBehaviour
     public int ID;
     int MaxScores = 6;
     public Text[] Entries;
+    public float FinalScore;
+    public GameObject gmObject;
+    public GameManager gm;
+    public Text EndScore;
 
     private void Start()
     {
@@ -20,6 +24,14 @@ public class LeaderboardController : MonoBehaviour
             if (response.success)
             {
                 Debug.Log("Success");
+                if (GameOverScript.score > 0)
+                {
+                    Debug.Log("Curr Game Score" + GameOverScript.score);
+                    FinalScore = (GameOverScript.score);
+                    EndScore.text = ("Score: " + FinalScore.ToString());
+
+                }
+
             }
             else
             {
@@ -30,7 +42,11 @@ public class LeaderboardController : MonoBehaviour
 
     public void SubmitScore()
     {
-        LootLockerSDKManager.SubmitScore(MemberID.text, int.Parse(PlayerScore.text), ID, (response) =>
+        gmObject = GameObject.Find("SceneGameManager");
+    
+        
+        
+        LootLockerSDKManager.SubmitScore(MemberID.text, (int)FinalScore, ID, (response) =>
         {
             if (response.success)
             {
