@@ -359,7 +359,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -441,17 +441,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &367618304 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4274994264629440116, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
-  m_PrefabInstance: {fileID: 4274994264996874100}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &382136755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,7 +1461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2d22a54539e04a91b69d6f5695f4907, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f91f16a6f714743f396c79109c8cc7ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1898,7 +1887,6 @@ MonoBehaviour:
   fillLoadingBar: {fileID: 1251064155}
   loadbarDelay: 1
   loadSceneDelay: 2
-  textmesh: {fileID: 367618304}
   completeSound: {fileID: 8300000, guid: 72dac1fa7c4644948951ecb1a30b8ef9, type: 3}
 --- !u!82 &1621408356
 AudioSource:
@@ -2089,6 +2077,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4274994263711895103, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264373039194, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994265127927472, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
