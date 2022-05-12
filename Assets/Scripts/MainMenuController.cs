@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor.VersionControl;
+
 
 public class MainMenuController : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] RectTransform fader;
     public GameObject loadingScreen;
     public Slider fillLoadingBar;
+    public int loadbarDelay = 1;
     public float loadSceneDelay = 10f;
     public Text textmesh;
 
@@ -38,11 +41,13 @@ public class MainMenuController : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
         operation.allowSceneActivation = false;
         loadingScreen.SetActive(true);
+
         while (!operation.isDone)
         {
-            //float progressValue = Mathf.Clamp01(operation.progress /.9f);
-            float progressValue = Mathf.Lerp(5f, 5f, 4 * Time.deltaTime);
+            float progressValue = Mathf.Clamp01(operation.progress / .9f);
+            yield return new WaitForSecondsRealtime(loadbarDelay);
             fillLoadingBar.value = progressValue;
+
             if (operation.progress >= .9f)
             {
                 yield return new WaitForSeconds(loadSceneDelay);
