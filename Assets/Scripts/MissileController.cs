@@ -11,6 +11,9 @@ public class MissileController : MonoBehaviour
     public GameObject gameManagerObject;
     private GameManager gameManager;
     private AudioSource source;
+    private float destroyDelay = .02f;
+
+
 
 
 
@@ -37,17 +40,25 @@ public class MissileController : MonoBehaviour
 
         if ((col.gameObject.tag == "Asteroid")||(col.gameObject.tag == "UFO"))
         {
-            Destroy(col.gameObject);
+            
             source.Play();
-            Destroy(gameObject);
             addObstaclePoint = col.gameObject.tag == "Asteroid"
                 ? 100
                 : 200;
             Debug.Log("Added additional points " + addObstaclePoint);
+            Destroy(col.gameObject);
+            StartCoroutine(DestroyDelay());
             gameManager.AddPoints(addObstaclePoint);
             
+
         }
 
+    }
+
+    private IEnumerator DestroyDelay()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(gameObject);
     }
 
 }

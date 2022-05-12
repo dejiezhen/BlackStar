@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 10825254}
   - component: {fileID: -8279855055687702616}
   - component: {fileID: 5303908912155026889}
-  - component: {fileID: 2351769208630411060}
+  - component: {fileID: 4626352442641691305}
   m_Layer: 3
   m_Name: shot_prefab
   m_TagString: Shoot
@@ -212,7 +212,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.2, y: 13.2, z: 63.199997}
   m_Center: {x: 0, y: 0, z: 24.999998}
---- !u!82 &2351769208630411060
+--- !u!82 &4626352442641691305
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
