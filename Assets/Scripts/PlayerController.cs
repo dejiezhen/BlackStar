@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(planeUpgradeInterval);
         laser = true;
-        planeUpgrade = !planeUpgrade;
+        planeUpgrade = false;
     }
 
     private IEnumerator InvincibilityDelay()
