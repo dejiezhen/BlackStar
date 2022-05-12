@@ -13,11 +13,6 @@ public class MissileController : MonoBehaviour
     private AudioSource source;
     private float destroyDelay = .02f;
 
-
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();

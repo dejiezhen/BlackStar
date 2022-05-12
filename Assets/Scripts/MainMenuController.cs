@@ -21,13 +21,6 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
-
-        //fader.gameObject.SetActive(true);
-        //LeanTween.scale(fader, new Vector3(1, 1, 1), 0);
-        //LeanTween.scale(fader, Vector3.zero, 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
-        //{
-        //fader.gameObject.SetActive(false);
-        //});
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -35,6 +28,8 @@ public class MainMenuController : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneId));
     }
+
+    // Credits to https://www.youtube.com/watch?v=YMj2qPq9CP8
     IEnumerator LoadSceneAsync(int sceneId)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
@@ -66,10 +61,6 @@ public class MainMenuController : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         });
     }
-
-
-    //Quits
-
 
     public void ExitGame()
     {

@@ -16,11 +16,14 @@ public class PlayerController : MonoBehaviour
     public Transform missileSpawnMiddle;
     public Transform missileSpawnLeft;
     public Transform missileSpawnRight;
+    public Transform rocketSpawnMiddle;
+    public bool laser = true;
 
     private AudioSource source;
     public AudioClip bite;
     public AudioClip powerup;
-    public AudioClip shoot;
+    public AudioClip shootLaser;
+    public AudioClip shootRocket;
     public AudioClip hurt;
     public AudioClip deathSound;
 
@@ -29,16 +32,14 @@ public class PlayerController : MonoBehaviour
     public GameObject catModel;
 
     public GameObject missilePrefab;
+    public GameObject rocketPrefab;
 
     private bool invincible = false;
     private float invincInterval = .2f;
     private float invincAnimationInterval = .1f;
     private bool planeUpgrade = false;
-    private float planeUpgradeInterval = 5f;
-    private int animationFlip = 0;
+    private int planeUpgradeInterval = 5;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -60,7 +61,6 @@ public class PlayerController : MonoBehaviour
         Vector3 yAcceleration = new Vector3(0, 1, 0) * moveForwardBack * Time.deltaTime * acceleration;
 
         rb.velocity += xAcceleration + yAcceleration;
-        //rb.velocity += xAcceleration;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -70,11 +70,18 @@ public class PlayerController : MonoBehaviour
 
     public void FireMissiles()
     {
-        Instantiate(missilePrefab, missileSpawnMiddle.position, Quaternion.identity);
-        if (planeUpgrade)
+        if (laser)
         {
-            Instantiate(missilePrefab, missileSpawnLeft.position, Quaternion.identity);
-            Instantiate(missilePrefab, missileSpawnRight.position, Quaternion.identity);
+            Instantiate(missilePrefab, missileSpawnMiddle.position, Quaternion.identity);
+            if (planeUpgrade)
+            {
+                Instantiate(missilePrefab, missileSpawnLeft.position, Quaternion.identity);
+                Instantiate(missilePrefab, missileSpawnRight.position, Quaternion.identity);
+            }
+        }
+        else
+        {
+            Instantiate(rocketPrefab, rocketSpawnMiddle.position, Quaternion.identity);
         }
     }
 
@@ -83,21 +90,26 @@ public class PlayerController : MonoBehaviour
         if (firingAbled)
         {
             FireMissiles();
-            source.clip = shoot;
-            source.Play();
-            firingAbled = false;
-            StartCoroutine(FiringDelay());
+            if (laser)
+            {
+                source.clip = shootLaser;
+                source.Play();
+                firingAbled = false;
+                StartCoroutine(FiringDelay());
+            }
+            else
+            {
+                source.clip = shootRocket;
+                source.Play();
+                firingAbled = true;
+            }
         }
     } 
     private IEnumerator PlaneUpgradeDelay()
     {
         yield return new WaitForSeconds(planeUpgradeInterval);
+        laser = true;
         planeUpgrade = !planeUpgrade;
-    }
-
-    private IEnumerator AnimationDelay()
-    {
-        yield return new WaitForSeconds(invincAnimationInterval);
     }
 
     private IEnumerator InvincibilityDelay()
@@ -122,6 +134,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Stopping Coroutine");
         invincible = false;
     }
+
     private IEnumerator FiringDelay()
     {
         yield return new WaitForSeconds(firingInterval);
@@ -158,6 +171,8 @@ public class PlayerController : MonoBehaviour
         {
             source.clip = powerup;
             source.Play();
+            float randomUpgrade = Random.Range(0, 2);
+            laser = randomUpgrade == 0;
             planeUpgrade = true;
             StartCoroutine(PlaneUpgradeDelay());
         }
