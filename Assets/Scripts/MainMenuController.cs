@@ -14,8 +14,6 @@ public class MainMenuController : MonoBehaviour
     public Slider fillLoadingBar;
     public int loadbarDelay = 1;
     public float loadSceneDelay = 10f;
-    public Text textmesh;
-
     private AudioSource audioSource;
     public AudioClip completeSound;
 
