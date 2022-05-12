@@ -642,6 +642,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7760202096085924611, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 476
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4ff5cf67c254651ba24ea8dda0799b, type: 3}
 --- !u!1001 &1879247412
