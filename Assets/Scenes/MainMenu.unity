@@ -2454,6 +2454,7 @@ MonoBehaviour:
   fader: {fileID: 0}
   loadingScreen: {fileID: 137411012}
   fillLoadingBar: {fileID: 1251064155}
+  loadbarDelay: 1
   loadSceneDelay: 2
   textmesh: {fileID: 367618304}
 --- !u!1 &1697716013
