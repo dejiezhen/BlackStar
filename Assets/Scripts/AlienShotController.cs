@@ -9,7 +9,6 @@ public class AlienShotController : MonoBehaviour
     private Rigidbody rb;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -18,12 +17,6 @@ public class AlienShotController : MonoBehaviour
         Vector3 temp = rb.velocity;
         temp.z = moveSpeed;
         rb.velocity = -temp;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
 }

@@ -60,4 +60,4 @@ crashlytics-build.properties
 */.DS_Store
 */.vsconfig
 .DS_Store
-./UserSettings/EditorUserSettings.asset
+UserSettings/EditorUserSettings.asset

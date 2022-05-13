@@ -14,15 +14,14 @@ public class UIManager : MonoBehaviour
     private Image _livesImg;
     public static int lives = 3;
     public GameObject musicManager;
-    private GameObject gmObject;
-    private GameManager gm;
     [SerializeField]
     private AudioClip deathSound;
     private AudioSource audioSource;
     private AudioSource backgroundMusic;
-    [SerializeField] RectTransform fader;
-
-
+    [SerializeField]
+    private RectTransform fader;
+    [SerializeField]
+    private GameManager gm;
 
     void Awake()
     {
@@ -54,7 +53,6 @@ public class UIManager : MonoBehaviour
         instance.LivesChange(currentLives);
     }
 
-    //Changes the lives
     private void LivesChange(int lives)
     {
         if (lives <= 0)
@@ -77,9 +75,16 @@ public class UIManager : MonoBehaviour
         LeanTween.scale(fader, Vector3.zero, 0f);
         LeanTween.scale(fader, new Vector3(1, 1, 1), 2f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
         {
-            gmObject = GameObject.Find("SceneGameManager");
-            gm = gmObject.GetComponent<GameManager>();
-            SceneManager.LoadScene("GameOver");
+            gm.playing = false;
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name == "Tutorial")
+            {
+                SceneManager.LoadScene("MainMenu");
+            } else
+            {
+                SceneManager.LoadScene("GameOver");
+
+            }
         });
     }
 }

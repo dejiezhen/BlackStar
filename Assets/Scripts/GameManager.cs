@@ -6,37 +6,28 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text score;
-    // Start is called before the first frame update
     public float overallScore;
     public float playerAcceleration;
+    public bool playing;
 
     public PointsManager pointsManager;
-
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    [SerializeField]
+    private FloatSO scoreSO;
 
     private void Start()
     {
-        score.text = "0";
+        playing = true;
     }
-
     public void AddPoints(float points)
     {
-        overallScore += points;
+        scoreSO.Value += points;
     }
     void Update()
     {
-        if (score)
+        if (playing)
         {
-            overallScore += (1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
-        }
-
-        if (score)
-        {
-            score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
+            scoreSO.Value += (1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
+            score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(scoreSO.Value).ToString();
         }
     }
 }

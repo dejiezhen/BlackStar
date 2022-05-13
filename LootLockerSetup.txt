@@ -1,0 +1,11 @@
+Window -> Package Manager -> '+' button -> add from git URL
+git URL: https://github.com/LootLocker/unity-sdk.git
+
+Please see https://github.com/LootLocker/unity-sdk for reference.
+
+
+After package has been added
+Edit -> Project Settings -> Lootlocker SDK 
+Set these values
+    API Key: 51e3492dafe0788a15cdf81650de67c82ac396af
+    Platform: IOS/Android based on device

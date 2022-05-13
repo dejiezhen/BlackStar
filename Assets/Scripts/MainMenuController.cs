@@ -9,13 +9,17 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     public GameObject mainMenu;
-    [SerializeField] RectTransform fader;
+    [SerializeField]
+    private GameManager gm;
     public GameObject loadingScreen;
     public Slider fillLoadingBar;
     public int loadbarDelay = 1;
     public float loadSceneDelay = 10f;
     private AudioSource audioSource;
     public AudioClip completeSound;
+
+    [SerializeField]
+    private FloatSO scoreSO;
 
     private void Start()
     {
@@ -27,9 +31,17 @@ public class MainMenuController : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneId));
     }
 
+    private void SetDefaultGameValues()
+    {
+        scoreSO.Value = 0;
+        UIManager.lives = 3;
+        Time.timeScale = 1;
+    }
+
     // Credits to https://www.youtube.com/watch?v=YMj2qPq9CP8
     IEnumerator LoadSceneAsync(int sceneId)
     {
+        SetDefaultGameValues();
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
         operation.allowSceneActivation = false;
         loadingScreen.SetActive(true);
@@ -50,9 +62,10 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadNonPlayScene(string sceneName)
     {
+        SetDefaultGameValues();
         audioSource.PlayOneShot(completeSound);
         SceneManager.LoadScene(sceneName);
-
+ 
     }
 
     public void ExitGame()

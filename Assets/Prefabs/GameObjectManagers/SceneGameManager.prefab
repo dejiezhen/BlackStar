@@ -46,4 +46,6 @@ MonoBehaviour:
   score: {fileID: 0}
   overallScore: 0
   playerAcceleration: 0
+  playing: 0
   pointsManager: {fileID: 0}
+  scoreSO: {fileID: 11400000, guid: 3625f732d4a974678897c3d22d984707, type: 2}

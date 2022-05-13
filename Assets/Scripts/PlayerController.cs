@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float damage = 100f;
     public float particleRange = 100f;
     private Rigidbody rb;
-    public Camera crosshair;
     public bool firingAbled = true;
     public float firingInterval = 2f;
     public Transform missileSpawnMiddle;
@@ -48,7 +47,6 @@ public class PlayerController : MonoBehaviour
         mrPlane = gameObject.GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         

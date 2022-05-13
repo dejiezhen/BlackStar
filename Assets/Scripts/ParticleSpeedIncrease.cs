@@ -9,13 +9,11 @@ public class ParticleSpeedIncrease : MonoBehaviour
 
     public PointsManager pointsManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         ps = GetComponent<ParticleSystem>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         var main = ps.main;

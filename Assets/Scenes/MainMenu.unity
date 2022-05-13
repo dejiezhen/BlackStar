@@ -208,12 +208,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1621408355}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: LoadNonPlayScene
-        m_Mode: 5
+        m_MethodName: LoadPlayScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Tutorial
           m_BoolArgument: 0
@@ -1135,7 +1135,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098995248
 GameObject:
@@ -1490,11 +1490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1311833471 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4274994264020646411, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
-  m_PrefabInstance: {fileID: 4274994264996874100}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1347806928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1857,7 @@ RectTransform:
   - {fileID: 1503431299}
   - {fileID: 136781250}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1882,12 +1877,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1621408350}
-  fader: {fileID: 1311833471}
+  gm: {fileID: 0}
   loadingScreen: {fileID: 137411012}
   fillLoadingBar: {fileID: 1251064155}
   loadbarDelay: 1
   loadSceneDelay: 2
   completeSound: {fileID: 8300000, guid: 72dac1fa7c4644948951ecb1a30b8ef9, type: 3}
+  scoreSO: {fileID: 11400000, guid: 3625f732d4a974678897c3d22d984707, type: 2}
 --- !u!82 &1621408356
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2005,7 +2001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4274994263711895103, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4274994263711895103, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2079,9 +2075,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4274994264081514030, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264081514031, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264373039194, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4274994264373039194, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264732248041, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264732248041, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264732248041, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264732248041, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274994264732248042, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4274994265127927472, guid: 0bcb16deb66c64061b307217907cf4cb, type: 3}
       propertyPath: m_IsActive

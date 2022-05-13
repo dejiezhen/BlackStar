@@ -15,15 +15,8 @@ public class CameraController : MonoBehaviour
 
     public float rotationSpeed = 300;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
         Vector3 offset = new Vector3(0, 1, -1);
         transform.position = target.position + offset * distance;
         transform.rotation = Quaternion.LookRotation(-offset, Vector3.up);

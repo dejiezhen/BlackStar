@@ -11,13 +11,10 @@ public class AsteroidSpawner : MonoBehaviour
     public float spawnTimer;
     public float timer;
 
-
-
     public GameObject[] spawnObjects;
 
     public PointsManager pointsManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         timer = spawnTimer;
@@ -25,7 +22,6 @@ public class AsteroidSpawner : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 

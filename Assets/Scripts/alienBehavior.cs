@@ -14,7 +14,6 @@ public class AlienBehavior : MonoBehaviour
     public AudioClip shoot;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();

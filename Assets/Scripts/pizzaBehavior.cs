@@ -9,7 +9,6 @@ public class PizzaBehavior : MonoBehaviour
     public float moveSpeed;
     public float rotateSpeed;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -21,7 +20,6 @@ public class PizzaBehavior : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (gameObject.transform.position.z < -50)
@@ -30,7 +28,5 @@ public class PizzaBehavior : MonoBehaviour
         }
 
         transform.Rotate(Vector3.right * Time.deltaTime * rotateSpeed);
-
-
     }
 }

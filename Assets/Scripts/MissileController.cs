@@ -8,7 +8,7 @@ public class MissileController : MonoBehaviour
     private float lifeTime = 3;
     private Rigidbody rb;
     public float addObstaclePoint;
-    public GameObject gameManagerObject;
+    private GameObject gameManagerObject;
     private GameManager gameManager;
     private AudioSource source;
     private float destroyDelay = .02f;
@@ -30,8 +30,6 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        
-
         if ((col.gameObject.tag == "Asteroid")||(col.gameObject.tag == "UFO"))
         {
             

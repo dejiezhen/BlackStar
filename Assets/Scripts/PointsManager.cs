@@ -9,8 +9,6 @@ public class PointsManager : MonoBehaviour
 
     public PlayerController playerScript;
 
-    //uimanager
-
     public float timePlayed;
     public float pointTimer;
     public float timer;
@@ -31,14 +29,7 @@ public class PointsManager : MonoBehaviour
         if (timer < 0)
         {
             points += 10;
-
             timer = pointTimer;
         }
-
-
-
     }
-
-
-
 }
