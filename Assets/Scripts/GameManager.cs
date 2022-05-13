@@ -29,7 +29,11 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        overallScore += ( 1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
+        if (score)
+        {
+            overallScore += (1 + Mathf.Floor(pointsManager.timePlayed / 5) * .1f);
+        }
+
         if (score)
         {
             score.GetComponent<UnityEngine.UI.Text>().text = Mathf.Round(overallScore).ToString();
