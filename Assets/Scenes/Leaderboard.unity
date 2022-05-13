@@ -261,7 +261,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8947b3d4a529e4db28256e564239ee7e, type: 3}
-    m_FontSize: 60
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Score:'
@@ -1763,8 +1763,6 @@ MonoBehaviour:
   ID: 0
   Entries: []
   FinalScore: 0
-  gmObject: {fileID: 0}
-  gm: {fileID: 0}
   EndScore: {fileID: 0}
 --- !u!4 &1387271711
 Transform:
@@ -3818,8 +3816,6 @@ MonoBehaviour:
   - {fileID: 839190129}
   - {fileID: 1822391803}
   FinalScore: 0
-  gmObject: {fileID: 0}
-  gm: {fileID: 0}
   EndScore: {fileID: 78470387}
 --- !u!114 &2091353188
 MonoBehaviour:
@@ -3923,3 +3919,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endText: {fileID: 78470387}
+  scoreSO: {fileID: 0}

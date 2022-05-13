@@ -16,6 +16,4 @@ public class GameOverScript : MonoBehaviour
             score = Mathf.Round(scoreSO.Value);
             endText.text = ("Good try you scored " + score.ToString() + " points");
     }
-
-
 }
