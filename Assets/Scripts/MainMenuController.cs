@@ -43,21 +43,16 @@ public class MainMenuController : MonoBehaviour
             if (operation.progress >= .9f)
             {
                 yield return new WaitForSeconds(loadSceneDelay);
-                operation.allowSceneActivation = true;
-
             }
+            operation.allowSceneActivation = true;
         }
     }
 
     public void LoadNonPlayScene(string sceneName)
     {
         audioSource.PlayOneShot(completeSound);
-        fader.gameObject.SetActive(true);
-        LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
-        {
-            SceneManager.LoadScene(sceneName);
-        });
+        SceneManager.LoadScene(sceneName);
+
     }
 
     public void ExitGame()

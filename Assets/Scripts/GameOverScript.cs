@@ -6,19 +6,25 @@ using UnityEngine.UI;
 public class GameOverScript : MonoBehaviour
 {
     public Text endText;
-    public GameObject gmObject;
-    public GameManager gm;
+    private GameObject gmObject;
+    private GameManager gm;
     public static float score;
 
     // Start is called before the first frame update
     void Start()
     {
-        gmObject = GameObject.Find("SceneGameManager");
-        gm = gmObject.GetComponent<GameManager>();
-        Time.timeScale = 0f;
-        score = Mathf.Round(gm.overallScore);
-        endText.text = ("Good try you scored " + score.ToString() + " points");
-        
+            Debug.Log("Activated");
+            gmObject = GameObject.Find("SceneGameManager");
+            Debug.Log(gmObject);
+            if (gmObject != null)
+            {
+                gm = gmObject.GetComponent<GameManager>();
+                Time.timeScale = 0f;
+                score = Mathf.Round(gm.overallScore);
+                Debug.Log(score);
+                endText.text = ("Good try you scored " + score.ToString() + " points");
+            }
+
     }
 
 

@@ -17,6 +17,7 @@ public class LeaderboardController : MonoBehaviour
     public GameManager gm;
     public Text EndScore;
 
+    // Credits to https://www.youtube.com/watch?v=pp8Vl4cKLdc
     private void Start()
     {
         LootLockerSDKManager.StartSession("Plater", (response) =>

@@ -46,5 +46,4 @@ MonoBehaviour:
   score: {fileID: 0}
   overallScore: 0
   playerAcceleration: 0
-  playerObject: {fileID: 0}
   pointsManager: {fileID: 0}

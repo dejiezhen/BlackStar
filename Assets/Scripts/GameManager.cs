@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     public float overallScore;
     public float playerAcceleration;
-    public GameObject playerObject;
 
     public PointsManager pointsManager;
 
